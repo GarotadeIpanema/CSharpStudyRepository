@@ -13,14 +13,11 @@ namespace CSharpBasic
     class FTPClass
     {
         // https://blog.hexabrain.net/151
-        // delegate, 대리자, 대신 일을 해준다, 메소드 참조를 포함하고 있는 영역
         // delegate 반환형 델리게이트명(매개변수..); public delegate void Del(string message);
         // 메소드의 참조를 포함(JS Callbackfuntion과 유사한듯)
-        // 메소드를 매개변수로 넘길 수 있다는 말인가요?'라고 생각하시는 분들이 있을지 모르겠는데, 네 맞습니다. 델리게이트를 이용해서 메소드를 넘겨줄 수 있습니다.
         // 매개변수의 데이터 형식과 반환형은 참조할 메소드의 매개변수의 데이터 형식과 반환형에 맞추어야만 합니다. 개수 역시도.
 
         // Delegate chain, 델리게이트 체인
-        // 델리게이트 하나를 가지고 여러개의 메소드를 한번에 호출할 수 있습니다
         // delegate void PDelegate(int a, int b);
         // PDelegate pd = (PDelegate)Delegate.Combine(new PDelegate(Plus), new PDelegate(Minus), new PDelegate(Division), new PDelegate(Multiplication));
         public delegate void ExceptionEventHandler(string locationID, Exception ex);
@@ -46,7 +43,12 @@ namespace CSharpBasic
         }
 
         // 서버 연결
-        public bool ConnectToServer(string ip, string port, string userId, string pwd)
+        public async Task<bool> ConnectToServer(string ip, string port, string userId, string pwd)
+        {
+            return await Task.FromResult(connectToServer(ip, port, userId, pwd));
+        }
+
+        private bool connectToServer(string ip, string port, string userId, string pwd)
         {
             this.isConnected = false;
 
@@ -80,7 +82,7 @@ namespace CSharpBasic
 
                 this.isConnected = true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 this.LastException = ex;
 
@@ -88,7 +90,7 @@ namespace CSharpBasic
                 System.Reflection.MemberInfo info = System.Reflection.MethodInfo.GetCurrentMethod();
                 string id = $"{info.ReflectedType.Name}.{info.Name}";
 
-                if(this.ExceptionEvent != null)
+                if (this.ExceptionEvent != null)
                 {
                     this.ExceptionEvent(id, ex);
                 }
@@ -100,9 +102,9 @@ namespace CSharpBasic
         }
 
         // 파일업로드
-        public bool UpLoad(string folder, string filename)
+        public async Task<bool> UpLoad(string folder, string filename)
         {
-            return upload(folder, filename);
+            return await Task.FromResult(upload(folder, filename));
         }
 
         private bool upload(string folder, string filename)
@@ -225,9 +227,9 @@ namespace CSharpBasic
 
         // 다운로드
 
-        public bool DownLoad(string localFullPathFile, string serverFullPathFile)
+        public async Task<bool> DownLoad(string localFullPathFile, string serverFullPathFile)
         {
-            return download(localFullPathFile, serverFullPathFile);
+            return await Task.FromResult(download(localFullPathFile, serverFullPathFile));
         }
         private bool download(string localFullPathFile, string serverFullPathFile)
         {
@@ -307,10 +309,10 @@ namespace CSharpBasic
             }
         }
 
-        public List<DirectoryPath> GetFTPList(string path)
+        public async Task<List<DirectoryPath>> GetFTPList(string path)
         {
             directoryPaths = new List<DirectoryPath>(); ;
-            return getFTPList(path);
+            return await Task.FromResult(getFTPList(path));
         }
 
         // 전체파일 불러오기
@@ -363,7 +365,12 @@ namespace CSharpBasic
         }
 
         // FTP 파일 삭제
-        public bool DeleteFTPFile(string path)
+        public async Task<bool> DeleteFTPFile(string path)
+        {
+            return await Task.FromResult(deleteFTPFile(path));
+        }
+
+        private bool deleteFTPFile(string path)
         {
             try
             {
@@ -372,7 +379,7 @@ namespace CSharpBasic
                 FtpWebRequest request = (FtpWebRequest)WebRequest.Create(url);
 
                 request.Credentials = new NetworkCredential(userId, pwd);
-                
+
                 if (Regex.IsMatch(path, @"(\.)[a-zA-Z0-9ㄱ-ㅎ가-힣]+$"))
                 {
                     request.Method = WebRequestMethods.Ftp.DeleteFile;
@@ -390,5 +397,6 @@ namespace CSharpBasic
             }
             return true;
         }
+
     }
 }

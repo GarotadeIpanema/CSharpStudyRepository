@@ -77,7 +77,7 @@ namespace CSharpBasic
             }
             Properties.Settings.Default.Save();
 
-            result = fTP.ConnectToServer(FTPIpAddrTxt.Text, FTPPortTxt.Text, FTPUserIdTxt.Text, FTPUserPwTxt.Text);
+            result = fTP.ConnectToServer(FTPIpAddrTxt.Text, FTPPortTxt.Text, FTPUserIdTxt.Text, FTPUserPwTxt.Text).Result;
 
             if (!result)
             {
@@ -123,10 +123,10 @@ namespace CSharpBasic
 
             if(save.ShowDialog() == DialogResult.OK)
             {
-                string serverPath = $@"{saveDirPath.Text}{saveFilePath.Text}";
+                string serverPath = $@"{saveDirPath.Text}/{saveFilePath.Text}";
                 // string localPath = @"C:\Users\jjh\Desktop\img\_Dest\test.txt";
                 string localPath = save.FileName;
-                if (fTP.DownLoad(localPath, serverPath))
+                if (fTP.DownLoad(localPath, serverPath).Result)
                 {
                     MessageBox.Show("다운로드 성공");
                 }
@@ -168,7 +168,7 @@ namespace CSharpBasic
             string fileName = openFileTxt.Text;
             string path = uploadFolderTxt.Text.Replace('\\','/'); // 업로드할 파일 저장할 FTP 경로 지정
 
-            if (fTP.UpLoad(path, fileName) == false) // 파일 업로드
+            if (fTP.UpLoad(path, fileName).Result == false) // 파일 업로드
             {
                 MessageBox.Show("FTP Upload 실패");
             }
@@ -213,7 +213,7 @@ namespace CSharpBasic
 
             navBarControl1.Groups.Clear();
 
-            List<DirectoryPath> directoryPaths = fTP.GetFTPList("/").OrderBy(item => item.Folder).ToList();
+            List<DirectoryPath> directoryPaths = fTP.GetFTPList("/").Result.OrderBy(item => item.Folder).ToList();
 
             NavBarGroup navBarGroup = null;
             NavBarItem navBarItem = null;
@@ -259,7 +259,7 @@ namespace CSharpBasic
                 MessageBox.Show("삭제할 파일을 선택해주세요.");
                 return;
             }
-            string msg  = fTP.DeleteFTPFile(deleteFilePath.Text) ? "삭제 되었습니다." : "삭제 실패하였습니다.";
+            string msg  = fTP.DeleteFTPFile(deleteFilePath.Text).Result ? "삭제 되었습니다." : "삭제 실패하였습니다.";
             ResetMenuBar();
             MessageBox.Show(msg);
         }
