@@ -1,0 +1,14 @@
+C:\Users\jjh\source\repos\test\ButtonEvent\bin\Debug\ButtonEvent.exe.config
+C:\Users\jjh\source\repos\test\ButtonEvent\bin\Debug\ButtonEvent.exe
+C:\Users\jjh\source\repos\test\ButtonEvent\bin\Debug\ButtonEvent.pdb
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.Form1.resources
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.exe
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.pdb
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.Form2.resources
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.Form3.resources
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.Form4.resources
+C:\Users\jjh\source\repos\test\ButtonEvent\obj\Debug\ButtonEvent.Form5.resources

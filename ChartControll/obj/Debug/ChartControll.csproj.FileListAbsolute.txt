@@ -1,0 +1,14 @@
+C:\Users\jjh\source\repos\test\ChartControll\bin\Debug\ChartControll.exe.config
+C:\Users\jjh\source\repos\test\ChartControll\bin\Debug\ChartControll.exe
+C:\Users\jjh\source\repos\test\ChartControll\bin\Debug\ChartControll.pdb
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.Form1.resources
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.exe
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.pdb
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.BasicChart.resources
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.ChartArea.resources
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.ChartEssential.resources
+C:\Users\jjh\source\repos\test\ChartControll\obj\Debug\ChartControll.ChartDateBinding.resources

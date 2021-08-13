@@ -1,0 +1,12 @@
+C:\Users\jjh\source\repos\test\OneFormMDI\bin\Debug\OneFormMDI.exe.config
+C:\Users\jjh\source\repos\test\OneFormMDI\bin\Debug\OneFormMDI.exe
+C:\Users\jjh\source\repos\test\OneFormMDI\bin\Debug\OneFormMDI.pdb
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.ChildForm1.resources
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.ChildForm2.resources
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.Form1.resources
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.exe
+C:\Users\jjh\source\repos\test\OneFormMDI\obj\Debug\OneFormMDI.pdb

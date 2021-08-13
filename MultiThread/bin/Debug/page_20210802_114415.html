@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	MSSQL.Tools - Useful SQL Tools
+</title><link href="sqlmgmtfav.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23998841-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>    
+
+<!-- Google +1 button
+     Place this tag in your head or just before your close body tag 
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+-->
+
+<link href="App_Themes/DefaultTheme/Site.css" type="text/css" rel="stylesheet" /><meta name="description" content="Useful SQL Tools" /><meta name="keywords" content="SQL, Tools, Management Tools" /></head>
+<body>
+    <form method="post" action="./" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTYwNjcwNzc5D2QWAmYPZBYCZg9kFgJmD2QWAgIDD2QWAgIFD2QWBAIBD2QWCgIBD2QWBAIBDw8WAh4EVGV4dAUMTW9zdCBQb3B1bGFyZGQCAw88KwAJAQAPFgQeCERhdGFLZXlzFgAeC18hSXRlbUNvdW50AgZkFgxmD2QWBGYPFQEZL3NxbC9Db252ZXJ0LVNRTC10by1FeGNlbGQCAQ8VARRDb252ZXJ0IFNRTCB0byBFeGNlbGQCAQ9kFgRmDxUBDy9zcWwvWFNELXRvLVNRTGQCAQ8VAQpYU0QgdG8gU1FMZAICD2QWBGYPFQEhL3NxbC9UcmFjZS1Db252ZXJ0ZXItZm9yLVNRTC0yMDA4ZAIBDxUBHFRyYWNlIENvbnZlcnRlciBmb3IgU1FMIDIwMDhkAgMPZBYEZg8VASEvc3FsL1RyYWNlLUNvbnZlcnRlci1mb3ItU1FMLTIwMTJkAgEPFQEcVHJhY2UgQ29udmVydGVyIGZvciBTUUwgMjAxMmQCBA9kFgRmDxUBGS9zcWwvU2VhcmNoLXN0cmluZy1pbi1TUUxkAgEPFQEUU2VhcmNoIHN0cmluZyBpbiBTUUxkAgUPZBYEZg8VASEvc3FsL1RyYWNlLUNvbnZlcnRlci1mb3ItU1FMLTIwMDVkAgEPFQEcVHJhY2UgQ29udmVydGVyIGZvciBTUUwgMjAwNWQCAw9kFgQCAQ8PFgIfAAUKQ2F0ZWdvcmllc2RkAgMPPCsACQEADxYEHwEWAB8CAgZkFgxmD2QWBGYPFQEUL0NhdGVnb3J5L1NRTC1TZWFyY2hkAgEPFQEKU1FMIFNlYXJjaGQCAQ9kFgRmDxUBGy9DYXRlZ29yeS9TUUwtQ29uZmlndXJhdGlvbmQCAQ8VARFTUUwgQ29uZmlndXJhdGlvbmQCAg9kFgRmDxUBEy9DYXRlZ29yeS9TUUwtVHJhY2VkAgEPFQEJU1FMIFRyYWNlZAIDD2QWBGYPFQEWL0NhdGVnb3J5L1NRTC1TZWN1cml0eWQCAQ8VAQxTUUwgU2VjdXJpdHlkAgQPZBYEZg8VARsvQ2F0ZWdvcnkvRXhwb3J0LWFuZC1JbXBvcnRkAgEPFQERRXhwb3J0IGFuZCBJbXBvcnRkAgUPZBYEZg8VARUvQ2F0ZWdvcnkvQ0xSLUxpYnJhcnlkAgEPFQELQ0xSIExpYnJhcnlkAgcPZBYEAgEPDxYCHwAFFlN0cmluZyBQYWQgLSBFYXN5IEVkaXRkZAIDDw8WAh8ABbYBPGEgaHJlZj0naHR0cDovL3N0cnBhZC5jb20nIHN0eWxlPSdjb2xvcjpsaW1lZ3JlZW47Zm9udC1zaXplOjEycHgnIHRhcmdldD0nX2JsYW5rJz5XZWItYmFzZWQsIEVhc3kgc3RyaW5nIG1hbmlwdWxhdGlvbiBwYWQgZm9yIFNRTCBkZXZlbG9wZXJzLiBFYXN5IGVkaXQgZm9yIHlvdXIgU1FMIGRhdGEuIENsaWNrITwvYT5kZAIJD2QWBAIBDw8WAh8ABQpSZWZlcmVuY2VzZGQCAw88KwAJAQAPFgQfARYAHwICAmQWBGYPZBYEZg8VARUvU3FsVmVyc2lvbkNoZWNrLmFzcHhkAgEPFQEZU1FMIFNlcnZlciBWZXJzaW9uIE51bWJlcmQCAQ9kFgRmDxUBES9TcWxDb2RlbmFtZS5hc3B4ZAIBDxUBFFNRTCBTZXJ2ZXIgQ29kZW5hbWVzZAILD2QWBAIBDw8WAh8ABQ5FeHRlcm5hbCBMaW5rc2RkAgMPPCsACQEADxYEHwEWAB8CAgNkFgZmD2QWBGYPFQEiaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL3NxbHNlcnZlcmQCAQ8VAQ9TUUwgU2VydmVyIEhvbWVkAgEPZBYEZg8VAR9odHRwOi8vd3d3LnNxbHNlcnZlcmNlbnRyYWwuY29tZAIBDxUBElNRTCBTZXJ2ZXIgQ2VudHJhbGQCAg9kFgRmDxUBFmh0dHA6Ly93d3cuc3FsdGVhbS5jb21kAgEPFQELU1FMVGVhbS5jb21kAgMPZBYCAgEPZBYCAgMPZBYEZg88KwAJAQAPFgQfARYAHwICCGQWEGYPZBYCAgEPZBYGAgEPDxYEHgtOYXZpZ2F0ZVVybAUofi9zcWwvUnVuLVNRTC1Bcy1EaWZmZXJlbnQtV2luZG93cy1Mb2dpbh8ABSJSdW4gU1FMIEFzIERpZmZlcmVudCBXaW5kb3dzIExvZ2luZGQCAw8PFggeCEltYWdlVXJsBRN+L0Rvd24vUnVuU3FsQXMucG5nHwAFIlJ1biBTUUwgQXMgRGlmZmVyZW50IFdpbmRvd3MgTG9naW4eB1Rvb2xUaXAFIlJ1biBTUUwgQXMgRGlmZmVyZW50IFdpbmRvd3MgTG9naW4fAwUofi9zcWwvUnVuLVNRTC1Bcy1EaWZmZXJlbnQtV2luZG93cy1Mb2dpbmRkAgUPFgIfAAUxUnVuIFNRTCBTY3JpcHQgVW5kZXIgRGlmZmVyZW50IFdpbmRvd3MgTG9naW4gVXNlcmQCAQ9kFgICAQ9kFgYCAQ8PFgQfAwUifi9zcWwvVHJhY2UtQ29udmVydGVyLWZvci1TUUwtMjAxNB8ABRxUcmFjZSBDb252ZXJ0ZXIgZm9yIFNRTCAyMDE0ZGQCAw8PFggfBAUdfi9Eb3duL1RyYWNlQ29udmVydGVyMjAxNC5wbmcfAAUcVHJhY2UgQ29udmVydGVyIGZvciBTUUwgMjAxNB8FBRxUcmFjZSBDb252ZXJ0ZXIgZm9yIFNRTCAyMDE0HwMFIn4vc3FsL1RyYWNlLUNvbnZlcnRlci1mb3ItU1FMLTIwMTRkZAIFDxYCHwAFJENvbnZlcnQgU1FMIDIwMTQgdHJhY2UgdG8gRXhjZWwgZmlsZWQCAg9kFgICAQ9kFgYCAQ8PFgQfAwURfi9zcWwvU1FMQ0xSLVV0aWwfAAULU1FMQ0xSIFV0aWxkZAIDDw8WCB8EBRV+L0Rvd24vU1FMQ0xSVXRpbC5wbmcfAAULU1FMQ0xSIFV0aWwfBQULU1FMQ0xSIFV0aWwfAwURfi9zcWwvU1FMQ0xSLVV0aWxkZAIFDxYCHwAFTEV4cG9ydHMgU1FMQ0xSIGFzc2VtYmx5IHRvIERMTCBhbmQgR2VuZXJhdGVzIENSRUFURSBBU1NFTUJMWSBzY3JpcHQgZnJvbSBETExkAgMPZBYCAgEPZBYGAgEPDxYEHwMFGn4vc3FsL0NvbnZlcnQtU1FMLXRvLUV4Y2VsHwAFFENvbnZlcnQgU1FMIHRvIEV4Y2VsZGQCAw8PFggfBAUUfi9Eb3duL1NxbDJFeGNlbC5wbmcfAAUUQ29udmVydCBTUUwgdG8gRXhjZWwfBQUUQ29udmVydCBTUUwgdG8gRXhjZWwfAwUafi9zcWwvQ29udmVydC1TUUwtdG8tRXhjZWxkZAIFDxYCHwAFMENvbnZlcnQgU1FMIFRhYmxlIG9yIFF1ZXJ5IFJlc3VsdHMgdG8gRXhjZWwgZmlsZWQCBA9kFgICAQ9kFgYCAQ8PFgQfAwUifi9zcWwvVHJhY2UtQ29udmVydGVyLWZvci1TUUwtMjAwOB8ABRxUcmFjZSBDb252ZXJ0ZXIgZm9yIFNRTCAyMDA4ZGQCAw8PFggfBAUZfi9Eb3duL1RyYWNlQ29udmVydGVyLnBuZx8ABRxUcmFjZSBDb252ZXJ0ZXIgZm9yIFNRTCAyMDA4HwUFHFRyYWNlIENvbnZlcnRlciBmb3IgU1FMIDIwMDgfAwUifi9zcWwvVHJhY2UtQ29udmVydGVyLWZvci1TUUwtMjAwOGRkAgUPFgIfAAUkQ29udmVydCBTUUwgdHJhY2UgZmlsZSB0byBFeGNlbCBmaWxlZAIFD2QWAgIBD2QWBgIBDw8WBB8DBR1+L3NxbC9TZWFyY2gtc3RyaW5nLWluLVNjaGVtYR8ABRdTZWFyY2ggc3RyaW5nIGluIFNjaGVtYWRkAgMPDxYIHwQFF34vRG93bi9TZWFyY2hTY2hlbWEucG5nHwAFF1NlYXJjaCBzdHJpbmcgaW4gU2NoZW1hHwUFF1NlYXJjaCBzdHJpbmcgaW4gU2NoZW1hHwMFHX4vc3FsL1NlYXJjaC1zdHJpbmctaW4tU2NoZW1hZGQCBQ8WAh8ABUNTZWFyY2ggZGF0YWJhc2Ugb2JqZWN0cy9zY2hlbWFzL1NRTCBBZ2VudCBqb2JzIGZvciBhIHN0cmluZyBrZXl3b3JkZAIGD2QWAgIBD2QWBgIBDw8WBB8DBRB+L3NxbC9YU0QtdG8tU1FMHwAFClhTRCB0byBTUUxkZAIDDw8WCB8EBRN+L0Rvd24vWHNkVG9TcWwucG5nHwAFClhTRCB0byBTUUwfBQUKWFNEIHRvIFNRTB8DBRB+L3NxbC9YU0QtdG8tU1FMZGQCBQ8WAh8ABTFHZW5lcmF0ZSBTUUwgc2NyaXB0ICguU1FMKSBmcm9tIFhNTCBTY2hlbWEgKC5YU0QpZAIHD2QWAgIBD2QWBgIBDw8WBB8DBRh+L3NxbC9TUUwtVGFibGUtU2NyaXB0ZXIfAAUSU1FMIFRhYmxlIFNjcmlwdGVyZGQCAw8PFggfBAUYfi9Eb3duL1RhYmxlU2NyaXB0ZXIucG5nHwAFElNRTCBUYWJsZSBTY3JpcHRlch8FBRJTUUwgVGFibGUgU2NyaXB0ZXIfAwUYfi9zcWwvU1FMLVRhYmxlLVNjcmlwdGVyZGQCBQ8WAh8ABSpHZW5lcmF0ZSBhIFNRTCBzY3JpcHQgZm9yIGEgdGFibGUgYW5kIGRhdGFkAgIPDxYCHgdFbmFibGVkaGRkZDJ/3lvZR+K0IaMjet6afTMBLGbOucJBQ9vkkdFWG/qp" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAATxmgGE1yGQpE3kfZNZCZOGKro0lpoAB6/pkJaAl+wZR2oX/n85S3R/quUh1/D8JgjfyLbWl3ir6i48/s0HfoKDIkoMUVF/p1Topz5nl0ZMyCCS8AlC3AGIwbuypGW0eYo=" />
+    <div class="master-page">
+        <div class="master-content">
+            
+
+<div class="header">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>  
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />  
+
+<style type="text/css">
+.ui-dialog, .ui-widget, .ui-widget-content, .ui-corner-all, .ui-draggable, .ui-resizable {background:yellow !important}??
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: none; text-align: center;}
+</style>
+
+<script type="text/javascript">    
+    function logoClick() {
+        window.location.href = "http://mssql.tools";
+    }
+</script>
+
+
+    <div align="center">
+      <div class="header-logo">
+        <img src="../Images/SqlTools.png" alt="Useful SQL Tools" onclick="logoClick()" />
+       </div>
+    </div>   
+
+</div>
+            
+
+<div class="mainmenu">
+    <ul>
+        <li><a href="/default.aspx">Home</a></li>
+        <li><a href="/product.aspx">Products</a></li>        
+        <li><a href="/library.aspx">CLR Libraries</a></li>        		
+        <li><a href="/references.aspx">References</a></li>
+        <li><a href="/contact.aspx">Contact</a></li>
+    </ul>
+</div>  
+            
+    <div class="master-leftbar">
+                
+    
+
+<div class="block block-category-navigation">
+    <div class="title">
+        <span id="MainContent_LeftBar_popularList_lblTitle">Most Popular</span>
+    </div>
+    <div class="clear"></div>
+    <div class="listbox">      
+        <table id="MainContent_LeftBar_popularList_DataList1" cellspacing="0">
+	<tr>
+		<td>
+              <a href='/sql/Convert-SQL-to-Excel' target="">
+                 Convert SQL to Excel
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/sql/XSD-to-SQL' target="">
+                 XSD to SQL
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/sql/Trace-Converter-for-SQL-2008' target="">
+                 Trace Converter for SQL 2008
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/sql/Trace-Converter-for-SQL-2012' target="">
+                 Trace Converter for SQL 2012
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/sql/Search-string-in-SQL' target="">
+                 Search string in SQL
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/sql/Trace-Converter-for-SQL-2005' target="">
+                 Trace Converter for SQL 2005
+              </a>
+           </td>
+	</tr>
+</table>    
+    </div>
+</div>
+        
+    
+
+<div class="block block-category-navigation">
+    <div class="title">
+        <span id="MainContent_LeftBar_categoryList_lblTitle">Categories</span>
+    </div>
+    <div class="clear"></div>
+    <div class="listbox">      
+        <table id="MainContent_LeftBar_categoryList_DataList1" cellspacing="0">
+	<tr>
+		<td>
+              <a href='/Category/SQL-Search' target="">
+                 SQL Search
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/Category/SQL-Configuration' target="">
+                 SQL Configuration
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/Category/SQL-Trace' target="">
+                 SQL Trace
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/Category/SQL-Security' target="">
+                 SQL Security
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/Category/Export-and-Import' target="">
+                 Export and Import
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/Category/CLR-Library' target="">
+                 CLR Library
+              </a>
+           </td>
+	</tr>
+</table>    
+    </div>
+</div>
+
+    
+
+<div class="block block-newsletter">
+
+   <div class="listbox" align="center">     
+        <span style="color: #FF9900; font-weight: bold;">Please Support MSSQL.Tools</span>
+        <br />
+        <iframe frameborder="0" style="width:160px;height:64px; overflow: hidden;" src="../Donate.htm"></iframe>     
+   </div>  
+
+</div>       
+    
+    
+
+<div class="block block-category-navigation">
+    <div class="title">
+        <span id="MainContent_LeftBar_adMsgBox_lblTitle">String Pad - Easy Edit</span>
+    </div>
+    <div class="clear"></div>
+    <div class="listbox">      
+        <span id="MainContent_LeftBar_adMsgBox_lblMsg"><a href='http://strpad.com' style='color:limegreen;font-size:12px' target='_blank'>Web-based, Easy string manipulation pad for SQL developers. Easy edit for your SQL data. Click!</a></span>
+    </div>
+</div>
+                
+    
+
+<div class="block block-category-navigation">
+    <div class="title">
+        <span id="MainContent_LeftBar_refList_lblTitle">References</span>
+    </div>
+    <div class="clear"></div>
+    <div class="listbox">      
+        <table id="MainContent_LeftBar_refList_DataList1" cellspacing="0">
+	<tr>
+		<td>
+              <a href='/SqlVersionCheck.aspx' target="">
+                 SQL Server Version Number
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='/SqlCodename.aspx' target="">
+                 SQL Server Codenames
+              </a>
+           </td>
+	</tr>
+</table>    
+    </div>
+</div>
+                
+    
+
+<div class="block block-category-navigation">
+    <div class="title">
+        <span id="MainContent_LeftBar_externalLink_lblTitle">External Links</span>
+    </div>
+    <div class="clear"></div>
+    <div class="listbox">      
+        <table id="MainContent_LeftBar_externalLink_DataList1" cellspacing="0">
+	<tr>
+		<td>
+              <a href='http://www.microsoft.com/sqlserver' target="_blank">
+                 SQL Server Home
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='http://www.sqlservercentral.com' target="_blank">
+                 SQL Server Central
+              </a>
+           </td>
+	</tr><tr>
+		<td>
+              <a href='http://www.sqlteam.com' target="_blank">
+                 SQLTeam.com
+              </a>
+           </td>
+	</tr>
+</table>    
+    </div>
+</div>
+         
+        
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />  
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>  
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#dialog").dialog({
+                modal: false,
+                autoOpen: false,
+                show: 'fade',
+                width: 300,
+                height: 300,
+                position: [0, 0],
+                open: function (event, ui) {
+                    $(".ui-dialog-titlebar-close", ui.dialog || ui).hide();
+                    setTimeout(function() {
+                        if ($("#dialog").dialog("isOpen") == true) {
+                            $("#dialog").dialog('close');
+                        }
+                    }, 4000);
+                }
+            });
+
+            $("#MainContent_LeftBar_popularList_DataList1 a").hover(
+            function () {
+                var url = this.toString();
+                var pos = url.lastIndexOf("/");
+                url = url.substring(pos + 1);
+
+                var posX = $(this).offset().left - $(document).scrollLeft() + $(this).outerWidth();
+                var posY = $(this).offset().top - $(document).scrollTop() + $(this).outerHeight();
+
+                $.ajax({
+                    type: "GET",
+                    url: "/api/ProductApi/" + url
+                }).done(function (data) {
+                    var rs = $.parseJSON(data);                    
+                    var aurl = "/sql/" + rs.Name.replace(" ", "-");
+                    $("#dialog").empty();
+                    $("#dialog").append("<h5>" + rs.Name + "</h5><br />");
+                    $("#dialog").append("Downloads : " + rs.Downloads + "<br /><br />");
+                    $("#dialog").append("<div><a href='" + aurl + "'><img src='http://mssql.tools/down/" + rs.PicFileName + "' /></a></div><br />");
+                    $("#dialog").append(rs.Description + "<br />");
+                    $("#dialog").dialog('option', 'position', [posX, posY]);
+                    $("#dialog").dialog('open');
+                    $(".ui-dialog-titlebar-close").css("visibility", "hidden");
+                    $(".ui-dialog-titlebar").hide();
+                });
+            },
+	        function (e) {
+	            if ($("#dialog").dialog("isOpen") == true) {
+	                $("#dialog").dialog('close');
+	            }
+	        });
+        });
+    </script>
+    <div id="dialog" style="display: none">
+    </div>
+
+
+    </div>
+    <div class="master-main-outside">
+        <div class="master-main">
+            
+    
+    
+   
+<div class="main-title">
+  <span id="MainContent_MainBar_Main_mainTitle_lblTitle">Main - Useful SQL Tools</span>  
+</div>
+<br />
+
+    
+
+ <div class="product-grid" align="center">
+
+    
+    癤?script type="text/javascript"><!--
+     google_ad_client = "pub-5428356164941935";
+     /* 468x60, created 6/13/11 */
+     google_ad_slot = "9976607433";
+     google_ad_width = 468;
+     google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+    <br />
+
+    <table id="MainContent_MainBar_Main_prodList_productList1" cellspacing="0">
+	<tr>
+		<td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_0_productTitle_0" href="sql/Run-SQL-As-Different-Windows-Login">Run SQL As Different Windows Login</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_0_productImage_0" title="Run SQL As Different Windows Login" href="sql/Run-SQL-As-Different-Windows-Login"><img title="Run SQL As Different Windows Login" src="Down/RunSqlAs.png" alt="Run SQL As Different Windows Login" /></a>
+    </div>
+    <div class="description">
+        Run SQL Script Under Different Windows Login User
+    </div> 
+</div>
+
+       </td><td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_1_productTitle_1" href="sql/Trace-Converter-for-SQL-2014">Trace Converter for SQL 2014</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_1_productImage_1" title="Trace Converter for SQL 2014" href="sql/Trace-Converter-for-SQL-2014"><img title="Trace Converter for SQL 2014" src="Down/TraceConverter2014.png" alt="Trace Converter for SQL 2014" /></a>
+    </div>
+    <div class="description">
+        Convert SQL 2014 trace to Excel file
+    </div> 
+</div>
+
+       </td>
+	</tr><tr>
+		<td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_2_productTitle_2" href="sql/SQLCLR-Util">SQLCLR Util</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_2_productImage_2" title="SQLCLR Util" href="sql/SQLCLR-Util"><img title="SQLCLR Util" src="Down/SQLCLRUtil.png" alt="SQLCLR Util" /></a>
+    </div>
+    <div class="description">
+        Exports SQLCLR assembly to DLL and Generates CREATE ASSEMBLY script from DLL
+    </div> 
+</div>
+
+       </td><td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_3_productTitle_3" href="sql/Convert-SQL-to-Excel">Convert SQL to Excel</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_3_productImage_3" title="Convert SQL to Excel" href="sql/Convert-SQL-to-Excel"><img title="Convert SQL to Excel" src="Down/Sql2Excel.png" alt="Convert SQL to Excel" /></a>
+    </div>
+    <div class="description">
+        Convert SQL Table or Query Results to Excel file
+    </div> 
+</div>
+
+       </td>
+	</tr><tr>
+		<td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_4_productTitle_4" href="sql/Trace-Converter-for-SQL-2008">Trace Converter for SQL 2008</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_4_productImage_4" title="Trace Converter for SQL 2008" href="sql/Trace-Converter-for-SQL-2008"><img title="Trace Converter for SQL 2008" src="Down/TraceConverter.png" alt="Trace Converter for SQL 2008" /></a>
+    </div>
+    <div class="description">
+        Convert SQL trace file to Excel file
+    </div> 
+</div>
+
+       </td><td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_5_productTitle_5" href="sql/Search-string-in-Schema">Search string in Schema</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_5_productImage_5" title="Search string in Schema" href="sql/Search-string-in-Schema"><img title="Search string in Schema" src="Down/SearchSchema.png" alt="Search string in Schema" /></a>
+    </div>
+    <div class="description">
+        Search database objects/schemas/SQL Agent jobs for a string keyword
+    </div> 
+</div>
+
+       </td>
+	</tr><tr>
+		<td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_6_productTitle_6" href="sql/XSD-to-SQL">XSD to SQL</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_6_productImage_6" title="XSD to SQL" href="sql/XSD-to-SQL"><img title="XSD to SQL" src="Down/XsdToSql.png" alt="XSD to SQL" /></a>
+    </div>
+    <div class="description">
+        Generate SQL script (.SQL) from XML Schema (.XSD)
+    </div> 
+</div>
+
+       </td><td class="item-box">
+            
+
+<div class="product-item">
+    <h2 class="product-title">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_7_productTitle_7" href="sql/SQL-Table-Scripter">SQL Table Scripter</a>
+    </h2>
+    <div class="picture">
+        <a id="MainContent_MainBar_Main_prodList_productList1_productItem_7_productImage_7" title="SQL Table Scripter" href="sql/SQL-Table-Scripter"><img title="SQL Table Scripter" src="Down/TableScripter.png" alt="SQL Table Scripter" /></a>
+    </div>
+    <div class="description">
+        Generate a SQL script for a table and data
+    </div> 
+</div>
+
+       </td>
+	</tr>
+</table>
+    
+    <input type="hidden" name="ctl00$ctl00$ctl00$MainContent$MainBar$Main$prodList$CurrentPageIndex" id="MainContent_MainBar_Main_prodList_CurrentPageIndex" value="0" />
+    <div>
+        <input type="submit" name="ctl00$ctl00$ctl00$MainContent$MainBar$Main$prodList$btnPrev" value="Previous" id="MainContent_MainBar_Main_prodList_btnPrev" disabled="disabled" class="aspNetDisabled" />
+        &nbsp; 
+        <input type="submit" name="ctl00$ctl00$ctl00$MainContent$MainBar$Main$prodList$btnNext" value="Next" id="MainContent_MainBar_Main_prodList_btnNext" />        
+    </div>
+ </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div class="master-rightbar">
+                         
+    
+
+<link rel="stylesheet" href="../Scripts/agile_carousel.css" type="text/css" />
+<script type="text/javascript" src="../Scripts/agile_carousel.alpha.js"></script>
+
+<div align="center">
+    
+
+
+
+
+
+
+<div id="rotator">
+	<div id="carousel1"></div>
+</div>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-5428356164941935";
+/* 160x600, rightside skyscrapper */
+google_ad_slot = "3804151632";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var data = [
+            { "content": "<div><a class='photo_link' href='http://mssql.tools/sql/trace-converter'><img class='photo' border='0' width=159 height=159 src='../images/slide/trace-to-excel.png' alt='Convert Trace To Excel'></a></div>" },
+            { "content": "<div><a class='photo_link' href='http://mssql.tools/sql/Convert-SQL-to-Excel'><img class='photo' border='0' width=159 height=159 src='../images/slide/sql-to-excel.png' alt='SQL To Excel'></a></div>" },
+            { "content": "<div><a class='photo_link' href='http://mssql.tools/sql/Search-string-in-SQL'><img class='photo' border='0' width=159 height=159 src='../images/slide/Search-string-in-SQL.png' alt='Search string in SQL'></a></div>" },
+            { "content": "<div><a class='photo_link' href='http://mssql.tools/sql/Replay-SQL-Trace'><img class='photo' border='0' width=159 height=159 src='../images/slide/Replace-trace.png' alt='Replace SQL trace'></a></div>" }
+        ];
+
+        $("#carousel1").agile_carousel({
+            carousel_data: data,
+            carousel_outer_height: 160,
+            carousel_height: 160,
+            slide_height: 160,
+            carousel_outer_width: 160,
+            slide_width: 160,
+            timer: 6000,
+            transition_time: 2000,
+            continuous_scrolling: true
+        });
+    });
+</script> 
+
+    </div>
+
+            <div class="clear">
+            </div>
+        </div>
+        <br />       
+        
+
+<div class="footer">
+    <div>
+       Copyright &#169; 2011-2020, MSSQL.TOOLS<br />
+       All rights reserved.
+    </div>
+</div>
+
+    </div>
+    </form>
+</body>
+</html>

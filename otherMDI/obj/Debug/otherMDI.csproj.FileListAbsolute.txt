@@ -1,0 +1,10 @@
+C:\Users\jjh\source\repos\test\otherMDI\bin\Debug\otherMDI.exe.config
+C:\Users\jjh\source\repos\test\otherMDI\bin\Debug\otherMDI.exe
+C:\Users\jjh\source\repos\test\otherMDI\bin\Debug\otherMDI.pdb
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.Form1.resources
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.exe
+C:\Users\jjh\source\repos\test\otherMDI\obj\Debug\otherMDI.pdb

@@ -1,0 +1,10 @@
+C:\Users\jjh\source\repos\test\LiveTime\bin\Debug\LiveTime.exe.config
+C:\Users\jjh\source\repos\test\LiveTime\bin\Debug\LiveTime.exe
+C:\Users\jjh\source\repos\test\LiveTime\bin\Debug\LiveTime.pdb
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.Form1.resources
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.exe
+C:\Users\jjh\source\repos\test\LiveTime\obj\Debug\LiveTime.pdb

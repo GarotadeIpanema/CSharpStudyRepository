@@ -1,0 +1,12 @@
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\bin\Debug\MultipleDocumentInterface.exe.config
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\bin\Debug\MultipleDocumentInterface.exe
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\bin\Debug\MultipleDocumentInterface.pdb
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.ChildForm1.resources
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.Form1.resources
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.exe
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.pdb
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.ChildForm2.resources
+C:\Users\jjh\source\repos\test\MultipleDocumentInterface\obj\Debug\MultipleDocumentInterface.csprojAssemblyReference.cache

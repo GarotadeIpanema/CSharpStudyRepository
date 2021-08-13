@@ -1,0 +1,11 @@
+C:\Users\jjh\source\repos\test\phone\bin\Debug\phone.exe.config
+C:\Users\jjh\source\repos\test\phone\bin\Debug\phone.exe
+C:\Users\jjh\source\repos\test\phone\bin\Debug\phone.pdb
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.Form1.resources
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.exe
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.pdb
+C:\Users\jjh\source\repos\test\phone\obj\Debug\phone.CustomBorderRoundPanel.resources
+C:\Users\jjh\source\repos\test\phone\obj\Debug\WindowsFormsApp1.CustomRoundButton.resources

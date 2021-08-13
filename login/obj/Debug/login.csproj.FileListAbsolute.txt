@@ -1,0 +1,4 @@
+C:\Users\jjh\source\repos\test\login\obj\Debug\login.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\login\obj\Debug\login.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\login\obj\Debug\login.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\login\obj\Debug\login.csproj.CoreCompileInputs.cache

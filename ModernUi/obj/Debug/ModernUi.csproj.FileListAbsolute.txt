@@ -1,0 +1,12 @@
+C:\Users\jjh\source\repos\test\ModernUi\bin\Debug\ModernUi.exe.config
+C:\Users\jjh\source\repos\test\ModernUi\bin\Debug\ModernUi.exe
+C:\Users\jjh\source\repos\test\ModernUi\bin\Debug\ModernUi.pdb
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.exe
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.pdb
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.CustomBorderRadiusPanel.resources
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.Form1.resources
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\WindowsFormsApp1.CustomRoundButton.resources
+C:\Users\jjh\source\repos\test\ModernUi\obj\Debug\ModernUi.GradientRoundBorderButton.resources

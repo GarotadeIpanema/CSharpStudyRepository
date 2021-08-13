@@ -1,0 +1,9 @@
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\bin\Debug\ContextMenuStrip_ToolStipMenuItem.exe.config
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\bin\Debug\ContextMenuStrip_ToolStipMenuItem.exe
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\bin\Debug\ContextMenuStrip_ToolStipMenuItem.pdb
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\obj\Debug\ContextMenuStrip_ToolStipMenuItem.Form1.resources
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\obj\Debug\ContextMenuStrip_ToolStipMenuItem.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\obj\Debug\ContextMenuStrip_ToolStipMenuItem.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\obj\Debug\ContextMenuStrip_ToolStipMenuItem.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\obj\Debug\ContextMenuStrip_ToolStipMenuItem.exe
+C:\Users\jjh\source\repos\test\ContextMenuStrip_ToolStipMenuItem\obj\Debug\ContextMenuStrip_ToolStipMenuItem.pdb

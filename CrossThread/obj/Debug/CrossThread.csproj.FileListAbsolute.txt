@@ -1,0 +1,10 @@
+C:\Users\jjh\source\repos\test\CrossThread\bin\Debug\CrossThread.exe.config
+C:\Users\jjh\source\repos\test\CrossThread\bin\Debug\CrossThread.exe
+C:\Users\jjh\source\repos\test\CrossThread\bin\Debug\CrossThread.pdb
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.Form1.resources
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.exe
+C:\Users\jjh\source\repos\test\CrossThread\obj\Debug\CrossThread.pdb

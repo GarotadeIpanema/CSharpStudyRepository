@@ -1,0 +1,612 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{89D26795-33C3-4470-A821-D8F5582033C1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSharpBasic</RootNamespace>
+    <AssemblyName>CSharpBasic</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnonymouseMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnonymouseMethod.Designer.cs">
+      <DependentUpon>AnonymouseMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AsunAwait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsunAwait.Designer.cs">
+      <DependentUpon>AsunAwait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BackWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BackWorker.Designer.cs">
+      <DependentUpon>BackWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator.Designer.cs">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckDriverRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckDriverRange.Designer.cs">
+      <DependentUpon>CheckDriverRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckListBoxController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckListBoxController.Designer.cs">
+      <DependentUpon>CheckListBoxController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildToParentPassedData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildToParentPassedData.Designer.cs">
+      <DependentUpon>ChildToParentPassedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CMD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CMD.Designer.cs">
+      <DependentUpon>CMD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTableControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTableControll.Designer.cs">
+      <DependentUpon>DataTableControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataTableToList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataTableToList.Designer.cs">
+      <DependentUpon>DataTableToList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateTimePickerControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateTimePickerControll.Designer.cs">
+      <DependentUpon>DateTimePickerControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DateViewUseRowFIlter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateViewUseRowFIlter.Designer.cs">
+      <DependentUpon>DateViewUseRowFIlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DictionaryEqualKeyError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DictionaryEqualKeyError.Designer.cs">
+      <DependentUpon>DictionaryEqualKeyError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectoryPath.cs" />
+    <Compile Include="DonutCharControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonutCharControl.Designer.cs">
+      <DependentUpon>DonutCharControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DragAndDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DragAndDrop.Designer.cs">
+      <DependentUpon>DragAndDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumGenericMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnumGenericMethod.Designer.cs">
+      <DependentUpon>EnumGenericMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProgressPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProgressPanel.Designer.cs">
+      <DependentUpon>frmProgressPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTPClass.cs" />
+    <Compile Include="FTPManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTPManager.Designer.cs">
+      <DependentUpon>FTPManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericMethod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericMethod.Designer.cs">
+      <DependentUpon>GenericMethod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControllAddDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControllAddDelete.Designer.cs">
+      <DependentUpon>GridControllAddDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControllGetCellData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControllGetCellData.Designer.cs">
+      <DependentUpon>GridControllGetCellData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GridControllWithComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GridControllWithComboBox.Designer.cs">
+      <DependentUpon>GridControllWithComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashTableAndDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HashTableAndDictionary.Designer.cs">
+      <DependentUpon>HashTableAndDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageViewer.Designer.cs">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Indexer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Indexer.Designer.cs">
+      <DependentUpon>Indexer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IsNumericCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IsNumericCheck.Designer.cs">
+      <DependentUpon>IsNumericCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListToDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListToDataTable.Designer.cs">
+      <DependentUpon>ListToDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading%28SpliashScreenManager%29.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Loading%28SpliashScreenManager%29.Designer.cs">
+      <DependentUpon>Loading%28SpliashScreenManager%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParentToChildPassedData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParentToChildPassedData.Designer.cs">
+      <DependentUpon>ParentToChildPassedData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LINQGroupBy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LINQGroupBy.Designer.cs">
+      <DependentUpon>LINQGroupBy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBoxControll.Designer.cs">
+      <DependentUpon>ListBoxControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListViewController.Designer.cs">
+      <DependentUpon>ListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListViewDragAndDrop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListViewDragAndDrop.Designer.cs">
+      <DependentUpon>ListViewDragAndDrop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaskedTextBoxControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaskedTextBoxControll.Designer.cs">
+      <DependentUpon>MaskedTextBoxControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MinMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinMax.Designer.cs">
+      <DependentUpon>MinMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MonthCalendarControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MonthCalendarControll.Designer.cs">
+      <DependentUpon>MonthCalendarControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotifyIconControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotifyIconControll.Designer.cs">
+      <DependentUpon>NotifyIconControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumericUpDownControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumericUpDownControll.Designer.cs">
+      <DependentUpon>NumericUpDownControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjToStrCastring.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjToStrCastring.Designer.cs">
+      <DependentUpon>ObjToStrCastring.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PcitureBoxControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PcitureBoxControll.Designer.cs">
+      <DependentUpon>PcitureBoxControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueAlgorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueueAlgorithm.Designer.cs">
+      <DependentUpon>QueueAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegexControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegexControll.Designer.cs">
+      <DependentUpon>RegexControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreenCapture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreenCapture.Designer.cs">
+      <DependentUpon>ScreenCapture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectLinq.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectLinq.Designer.cs">
+      <DependentUpon>SelectLinq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerializationXMLSoapBinary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerializationXMLSoapBinary.Designer.cs">
+      <DependentUpon>SerializationXMLSoapBinary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpreadSheetControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpreadSheetControll.Designer.cs">
+      <DependentUpon>SpreadSheetControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="STACKAlgorithm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STACKAlgorithm.Designer.cs">
+      <DependentUpon>STACKAlgorithm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabConrolDynamicPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabConrolDynamicPage.Designer.cs">
+      <DependentUpon>TabConrolDynamicPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadWithParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadWithParameter.Designer.cs">
+      <DependentUpon>ThreadWithParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeViewControll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeViewControll.Designer.cs">
+      <DependentUpon>TreeViewControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TupleExample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TupleExample.Designer.cs">
+      <DependentUpon>TupleExample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm1.Designer.cs">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WaitForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WaitForm2.Designer.cs">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowMultiThreading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowMultiThreading.Designer.cs">
+      <DependentUpon>WindowMultiThreading.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnonymouseMethod.resx">
+      <DependentUpon>AnonymouseMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AsunAwait.resx">
+      <DependentUpon>AsunAwait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BackWorker.resx">
+      <DependentUpon>BackWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator.resx">
+      <DependentUpon>Calculator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckDriverRange.resx">
+      <DependentUpon>CheckDriverRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckListBoxController.resx">
+      <DependentUpon>CheckListBoxController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildToParentPassedData.resx">
+      <DependentUpon>ChildToParentPassedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CMD.resx">
+      <DependentUpon>CMD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTableControll.resx">
+      <DependentUpon>DataTableControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataTableToList.resx">
+      <DependentUpon>DataTableToList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateTimePickerControll.resx">
+      <DependentUpon>DateTimePickerControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateViewUseRowFIlter.resx">
+      <DependentUpon>DateViewUseRowFIlter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DictionaryEqualKeyError.resx">
+      <DependentUpon>DictionaryEqualKeyError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonutCharControl.resx">
+      <DependentUpon>DonutCharControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DragAndDrop.resx">
+      <DependentUpon>DragAndDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnumGenericMethod.resx">
+      <DependentUpon>EnumGenericMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProgressPanel.resx">
+      <DependentUpon>frmProgressPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTPManager.resx">
+      <DependentUpon>FTPManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericMethod.resx">
+      <DependentUpon>GenericMethod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControllAddDelete.resx">
+      <DependentUpon>GridControllAddDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControllGetCellData.resx">
+      <DependentUpon>GridControllGetCellData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GridControllWithComboBox.resx">
+      <DependentUpon>GridControllWithComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HashTableAndDictionary.resx">
+      <DependentUpon>HashTableAndDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageViewer.resx">
+      <DependentUpon>ImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Indexer.resx">
+      <DependentUpon>Indexer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IsNumericCheck.resx">
+      <DependentUpon>IsNumericCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LINQGroupBy.resx">
+      <DependentUpon>LINQGroupBy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBoxControll.resx">
+      <DependentUpon>ListBoxControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListToDataTable.resx">
+      <DependentUpon>ListToDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewController.resx">
+      <DependentUpon>ListViewController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListViewDragAndDrop.resx">
+      <DependentUpon>ListViewDragAndDrop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading%28SpliashScreenManager%29.resx">
+      <DependentUpon>Loading%28SpliashScreenManager%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaskedTextBoxControll.resx">
+      <DependentUpon>MaskedTextBoxControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinMax.resx">
+      <DependentUpon>MinMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MonthCalendarControll.resx">
+      <DependentUpon>MonthCalendarControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotifyIconControll.resx">
+      <DependentUpon>NotifyIconControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumericUpDownControll.resx">
+      <DependentUpon>NumericUpDownControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjToStrCastring.resx">
+      <DependentUpon>ObjToStrCastring.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParentToChildPassedData.resx">
+      <DependentUpon>ParentToChildPassedData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PcitureBoxControll.resx">
+      <DependentUpon>PcitureBoxControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="QueueAlgorithm.resx">
+      <DependentUpon>QueueAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegexControll.resx">
+      <DependentUpon>RegexControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreenCapture.resx">
+      <DependentUpon>ScreenCapture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectLinq.resx">
+      <DependentUpon>SelectLinq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SerializationXMLSoapBinary.resx">
+      <DependentUpon>SerializationXMLSoapBinary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpreadSheetControll.resx">
+      <DependentUpon>SpreadSheetControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STACKAlgorithm.resx">
+      <DependentUpon>STACKAlgorithm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabConrolDynamicPage.resx">
+      <DependentUpon>TabConrolDynamicPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreadWithParameter.resx">
+      <DependentUpon>ThreadWithParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeViewControll.resx">
+      <DependentUpon>TreeViewControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TupleExample.resx">
+      <DependentUpon>TupleExample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm1.resx">
+      <DependentUpon>WaitForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WaitForm2.resx">
+      <DependentUpon>WaitForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowMultiThreading.resx">
+      <DependentUpon>WindowMultiThreading.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
