@@ -1,0 +1,15 @@
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\NewCloling.exe
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\NewCloling.deps.json
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\NewCloling.runtimeconfig.json
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\NewCloling.runtimeconfig.dev.json
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\NewCloling.dll
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\NewCloling.pdb
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.AssemblyInfoInputs.cache
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.AssemblyInfo.cs
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.dll
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.pdb
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.genruntimeconfig.cache
+C:\Users\jjh\source\repos\test\NewCloling\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\jjh\source\repos\test\NewCloling\obj\Debug\netcoreapp3.1\NewCloling.csproj.CopyComplete

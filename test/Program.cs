@@ -24,7 +24,7 @@ namespace test
         private static SqlCommand cmd = null;
         private static List<byte[]> pw = new List<byte[]>();
 
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
             // ftp 삭제 폴더 경로 정규표현식
             // Console.WriteLine(Regex.IsMatch(@"/test/test", @"(\/|\\){1}[a-zA-Z0-9ㄱ-ㅎ가-힣]+$"));

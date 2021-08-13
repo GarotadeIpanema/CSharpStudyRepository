@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataGridViewAndExcel", "Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kiosk", "kiosk\kiosk.csproj", "{EC9885D8-ED0B-4EEF-BC2F-7B1008B67CBF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewCloling", "NewCloling\NewCloling.csproj", "{A3520DE8-E6B1-4BCD-997A-8DC144383B09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{EC9885D8-ED0B-4EEF-BC2F-7B1008B67CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC9885D8-ED0B-4EEF-BC2F-7B1008B67CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC9885D8-ED0B-4EEF-BC2F-7B1008B67CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

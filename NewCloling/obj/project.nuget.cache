@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "JnXhxVMTo7yLMN3KwMb9QaUWpWg/7R6G8UNBnrd+a5ySd8YSo4vZGIxrd7wYRSjnMy1+u+Nadn7WfVhiSeHa3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jjh\\source\\repos\\test\\NewCloling\\NewCloling.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jjh\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
