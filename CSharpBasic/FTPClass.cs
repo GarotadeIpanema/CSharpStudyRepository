@@ -5,6 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace CSharpBasic
@@ -371,11 +372,15 @@ namespace CSharpBasic
                 FtpWebRequest request = (FtpWebRequest)WebRequest.Create(url);
 
                 request.Credentials = new NetworkCredential(userId, pwd);
-
-                if (path.Split('/').Count() > 2)
+                
+                if (Regex.IsMatch(path, @"(\.)[a-zA-Z0-9ㄱ-ㅎ가-힣]+$"))
+                {
                     request.Method = WebRequestMethods.Ftp.DeleteFile;
+                }
                 else
-                    request.Method = WebRequestMethods.Ftp.RemoveDirectory ;
+                {
+                    request.Method = WebRequestMethods.Ftp.RemoveDirectory;
+                }
 
                 using (request.GetResponse()) { }
             }

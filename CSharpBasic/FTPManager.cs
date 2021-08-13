@@ -93,10 +93,12 @@ namespace CSharpBasic
         private void NavBarItem_CLick(object sender, NavBarLinkEventArgs e)
         {
             NavBarItem item = (NavBarItem)sender;
-            string Folder = $"/{item.Hint.Replace("/", "")}";
+
+            string Folder = item.Hint.Substring(0, item.Hint.Length-1);
             string File = (string.IsNullOrEmpty(item.Caption) || item.Caption.Equals("EMPTY")) ? "" : $"/{item.Caption}";
+
             saveDirPath.Text = Folder;
-            saveFilePath.Text = File;
+            saveFilePath.Text = File.Replace("/","");
 
             deleteFilePath.Text = $"{Folder}{File}";
         }

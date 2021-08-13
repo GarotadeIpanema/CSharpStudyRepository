@@ -26,7 +26,13 @@ namespace test
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine(Regex.IsMatch(@"/test/test", @"(\/|\\){1}[a-zA-Z0-9ㄱ-ㅎ가-힣]+$"));
+            // ftp 삭제 폴더 경로 정규표현식
+            // Console.WriteLine(Regex.IsMatch(@"/test/test", @"(\/|\\){1}[a-zA-Z0-9ㄱ-ㅎ가-힣]+$"));
+
+            // ftp 파일 폴더 구분
+            Console.WriteLine(Regex.IsMatch("/test/test/test.xsl", @"(\/|\\){1}[a-zA-Z0-9ㄱ-ㅎ가-힣]+(\.)[a-zA-Z0-9ㄱ-ㅎ가-힣]+$"));
+
+
             /* 전화번호 확인
             for(int i = 0; i < 10; i++)
             {
@@ -149,12 +155,14 @@ namespace test
             // 0x8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918
             //0xB9E15D36DACFA970D8917F8A2D25B3E56074B572
 
+            /*
             List<string> a = new List<string> { "a", "b", "c", "d", "e", "a", "d" };
             a = a.Distinct().ToList();
             a.ForEach(item =>
             {
                 Console.WriteLine(item);
             });
+            */
         }
 
         // sendgrid
