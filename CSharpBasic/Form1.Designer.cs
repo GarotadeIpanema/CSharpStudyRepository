@@ -81,6 +81,7 @@ namespace CSharpBasic
             this.button50 = new System.Windows.Forms.Button();
             this.button51 = new System.Windows.Forms.Button();
             this.button52 = new System.Windows.Forms.Button();
+            this.button53 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -620,11 +621,22 @@ namespace CSharpBasic
             this.button52.UseVisualStyleBackColor = true;
             this.button52.Click += new System.EventHandler(this.button52_Click);
             // 
+            // button53
+            // 
+            this.button53.Location = new System.Drawing.Point(784, 381);
+            this.button53.Name = "button53";
+            this.button53.Size = new System.Drawing.Size(175, 23);
+            this.button53.TabIndex = 52;
+            this.button53.Text = "KakaoLogin";
+            this.button53.UseVisualStyleBackColor = true;
+            this.button53.Click += new System.EventHandler(this.button53_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button53);
             this.Controls.Add(this.button52);
             this.Controls.Add(this.button51);
             this.Controls.Add(this.button50);
@@ -737,6 +749,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button50;
         private System.Windows.Forms.Button button51;
         private System.Windows.Forms.Button button52;
+        private System.Windows.Forms.Button button53;
     }
 }
 

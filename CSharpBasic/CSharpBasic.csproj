@@ -57,6 +57,15 @@
     <ErrorReport>prompt</ErrorReport>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CefSharp, Version=92.0.251.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
       <HintPath>..\packages\CefSharp.Common.92.0.251\lib\net452\CefSharp.dll</HintPath>
@@ -92,8 +101,12 @@
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="RestSharp, Version=106.12.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.12.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -268,6 +281,19 @@
     </Compile>
     <Compile Include="IsNumericCheck.Designer.cs">
       <DependentUpon>IsNumericCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KakaoDefine.cs" />
+    <Compile Include="KakaoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KakaoLogin.Designer.cs">
+      <DependentUpon>KakaoLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KakaoLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KakaoLoginForm.Designer.cs">
+      <DependentUpon>KakaoLoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ListToDataTable.cs">
       <SubType>Form</SubType>
@@ -546,6 +572,12 @@
     <EmbeddedResource Include="IsNumericCheck.resx">
       <DependentUpon>IsNumericCheck.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="KakaoLogin.resx">
+      <DependentUpon>KakaoLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KakaoLoginForm.resx">
+      <DependentUpon>KakaoLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LINQGroupBy.resx">
       <DependentUpon>LINQGroupBy.cs</DependentUpon>
     </EmbeddedResource>
@@ -650,6 +682,7 @@
       <DependentUpon>WindowMultiThreading.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
