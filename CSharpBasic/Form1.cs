@@ -272,5 +272,10 @@ namespace CSharpBasic
         {
             (new FTPManager()).ShowDialog();
         }
+
+        private void button52_Click(object sender, EventArgs e)
+        {
+            (new NaverNews()).ShowDialog();
+        }
     }
 }
