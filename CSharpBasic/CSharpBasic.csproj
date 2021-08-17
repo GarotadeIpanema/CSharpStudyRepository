@@ -407,6 +407,30 @@
     <Compile Include="RegexControll.Designer.cs">
       <DependentUpon>RegexControll.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoundBorderFillPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundBorderFillPanel.Designer.cs">
+      <DependentUpon>RoundBorderFillPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundBorderFillPanelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoundBorderFillPanelControl.Designer.cs">
+      <DependentUpon>RoundBorderFillPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundBorderLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundBorderLabel.Designer.cs">
+      <DependentUpon>RoundBorderLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundBorderLabelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoundBorderLabelControl.Designer.cs">
+      <DependentUpon>RoundBorderLabelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ScreenCapture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -424,6 +448,18 @@
     </Compile>
     <Compile Include="SerializationXMLSoapBinary.Designer.cs">
       <DependentUpon>SerializationXMLSoapBinary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShadowGradientLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShadowGradientLabel.Designer.cs">
+      <DependentUpon>ShadowGradientLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShadowGradientLabelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShadowGradientLabelControl.Designer.cs">
+      <DependentUpon>ShadowGradientLabelControl.cs</DependentUpon>
     </Compile>
     <Compile Include="SplashScreen1.cs">
       <SubType>Form</SubType>
@@ -639,6 +675,12 @@
     <EmbeddedResource Include="RegexControll.resx">
       <DependentUpon>RegexControll.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RoundBorderFillPanelControl.resx">
+      <DependentUpon>RoundBorderFillPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundBorderLabelControl.resx">
+      <DependentUpon>RoundBorderLabelControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ScreenCapture.resx">
       <DependentUpon>ScreenCapture.cs</DependentUpon>
     </EmbeddedResource>
@@ -647,6 +689,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SerializationXMLSoapBinary.resx">
       <DependentUpon>SerializationXMLSoapBinary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShadowGradientLabelControl.resx">
+      <DependentUpon>ShadowGradientLabelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
