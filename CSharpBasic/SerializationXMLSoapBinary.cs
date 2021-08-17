@@ -34,8 +34,8 @@ namespace CSharpBasic
             }
 
             // private 멤버이므로 저장 안함
-            private int avgWeight;
-            private int _age;
+            //private int avgWeight;
+            //private int _age;
 
             public Person() { }
 

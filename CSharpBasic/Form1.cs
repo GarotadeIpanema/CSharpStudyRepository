@@ -287,5 +287,10 @@ namespace CSharpBasic
         {
             (new ShadowGradientLabelControl()).ShowDialog();
         }
+
+        private void button55_Click(object sender, EventArgs e)
+        {
+            (new RoundBorderFillPanelControl()).ShowDialog();
+        }
     }
 }
