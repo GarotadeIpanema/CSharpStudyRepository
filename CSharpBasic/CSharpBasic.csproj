@@ -264,6 +264,18 @@
     <Compile Include="HashTableAndDictionary.Designer.cs">
       <DependentUpon>HashTableAndDictionary.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ImageButton.Designer.cs">
+      <DependentUpon>ImageButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageButtonControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageButtonControl.Designer.cs">
+      <DependentUpon>ImageButtonControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImageViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -598,6 +610,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HashTableAndDictionary.resx">
       <DependentUpon>HashTableAndDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageButtonControl.resx">
+      <DependentUpon>ImageButtonControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImageViewer.resx">
       <DependentUpon>ImageViewer.cs</DependentUpon>
