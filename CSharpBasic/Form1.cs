@@ -282,5 +282,10 @@ namespace CSharpBasic
         {
             (new KakaoLogin()).ShowDialog();
         }
+
+        private void button54_Click(object sender, EventArgs e)
+        {
+            (new ShadowGradientLabelControl()).ShowDialog();
+        }
     }
 }

@@ -425,6 +425,18 @@
     <Compile Include="SerializationXMLSoapBinary.Designer.cs">
       <DependentUpon>SerializationXMLSoapBinary.cs</DependentUpon>
     </Compile>
+    <Compile Include="ShadowGradientLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ShadowGradientLabel.Designer.cs">
+      <DependentUpon>ShadowGradientLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShadowGradientLabelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShadowGradientLabelControl.Designer.cs">
+      <DependentUpon>ShadowGradientLabelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -647,6 +659,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SerializationXMLSoapBinary.resx">
       <DependentUpon>SerializationXMLSoapBinary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShadowGradientLabelControl.resx">
+      <DependentUpon>ShadowGradientLabelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
