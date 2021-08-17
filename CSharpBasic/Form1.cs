@@ -297,5 +297,10 @@ namespace CSharpBasic
         {
             (new RoundBorderLabelControl()).ShowDialog();
         }
+
+        private void button57_Click(object sender, EventArgs e)
+        {
+            (new ImageButtonControl()).ShowDialog();
+        }
     }
 }
