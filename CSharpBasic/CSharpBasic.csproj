@@ -419,6 +419,18 @@
     <Compile Include="RoundBorderFillPanelControl.Designer.cs">
       <DependentUpon>RoundBorderFillPanelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="RoundBorderLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundBorderLabel.Designer.cs">
+      <DependentUpon>RoundBorderLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoundBorderLabelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoundBorderLabelControl.Designer.cs">
+      <DependentUpon>RoundBorderLabelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="ScreenCapture.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -665,6 +677,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RoundBorderFillPanelControl.resx">
       <DependentUpon>RoundBorderFillPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundBorderLabelControl.resx">
+      <DependentUpon>RoundBorderLabelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ScreenCapture.resx">
       <DependentUpon>ScreenCapture.cs</DependentUpon>

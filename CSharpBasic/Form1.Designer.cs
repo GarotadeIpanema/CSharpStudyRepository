@@ -84,6 +84,7 @@ namespace CSharpBasic
             this.button53 = new System.Windows.Forms.Button();
             this.button54 = new System.Windows.Forms.Button();
             this.button55 = new System.Windows.Forms.Button();
+            this.button56 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -653,11 +654,22 @@ namespace CSharpBasic
             this.button55.UseVisualStyleBackColor = true;
             this.button55.Click += new System.EventHandler(this.button55_Click);
             // 
+            // button56
+            // 
+            this.button56.Location = new System.Drawing.Point(220, 351);
+            this.button56.Name = "button56";
+            this.button56.Size = new System.Drawing.Size(175, 23);
+            this.button56.TabIndex = 55;
+            this.button56.Text = "RoundBorderLabel";
+            this.button56.UseVisualStyleBackColor = true;
+            this.button56.Click += new System.EventHandler(this.button56_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button56);
             this.Controls.Add(this.button55);
             this.Controls.Add(this.button54);
             this.Controls.Add(this.button53);
@@ -776,6 +788,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button53;
         private System.Windows.Forms.Button button54;
         private System.Windows.Forms.Button button55;
+        private System.Windows.Forms.Button button56;
     }
 }
 
