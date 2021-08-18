@@ -253,6 +253,18 @@
     <Compile Include="GradientButtonCOntrol.Designer.cs">
       <DependentUpon>GradientButtonCOntrol.cs</DependentUpon>
     </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradientPanel.Designer.cs">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradientPanelControl.Designer.cs">
+      <DependentUpon>GradientPanelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="GridControllAddDelete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -638,6 +650,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GradientButtonCOntrol.resx">
       <DependentUpon>GradientButtonCOntrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradientPanelControl.resx">
+      <DependentUpon>GradientPanelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GridControllAddDelete.resx">
       <DependentUpon>GridControllAddDelete.cs</DependentUpon>

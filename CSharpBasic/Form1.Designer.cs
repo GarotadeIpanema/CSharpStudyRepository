@@ -88,6 +88,7 @@ namespace CSharpBasic
             this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -697,11 +698,22 @@ namespace CSharpBasic
             this.button59.UseVisualStyleBackColor = true;
             this.button59.Click += new System.EventHandler(this.button59_Click);
             // 
+            // button60
+            // 
+            this.button60.Location = new System.Drawing.Point(834, 351);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(143, 23);
+            this.button60.TabIndex = 59;
+            this.button60.Text = "GradinetPanel";
+            this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button60);
             this.Controls.Add(this.button59);
             this.Controls.Add(this.button58);
             this.Controls.Add(this.button57);
@@ -828,6 +840,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button button58;
         private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.Button button60;
     }
 }
 
