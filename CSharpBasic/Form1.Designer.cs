@@ -90,6 +90,7 @@ namespace CSharpBasic
             this.button59 = new System.Windows.Forms.Button();
             this.button60 = new System.Windows.Forms.Button();
             this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -711,7 +712,7 @@ namespace CSharpBasic
             // 
             // button61
             // 
-            this.button61.Location = new System.Drawing.Point(33, 400);
+            this.button61.Location = new System.Drawing.Point(983, 351);
             this.button61.Name = "button61";
             this.button61.Size = new System.Drawing.Size(143, 23);
             this.button61.TabIndex = 60;
@@ -719,11 +720,22 @@ namespace CSharpBasic
             this.button61.UseVisualStyleBackColor = true;
             this.button61.Click += new System.EventHandler(this.button61_Click);
             // 
+            // button62
+            // 
+            this.button62.Location = new System.Drawing.Point(38, 389);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(101, 23);
+            this.button62.TabIndex = 61;
+            this.button62.Text = "JsonFile";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button62);
             this.Controls.Add(this.button61);
             this.Controls.Add(this.button60);
             this.Controls.Add(this.button59);
@@ -854,6 +866,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button60;
         private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button62;
     }
 }
 

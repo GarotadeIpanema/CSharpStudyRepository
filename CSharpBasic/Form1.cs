@@ -322,5 +322,10 @@ namespace CSharpBasic
         {
             (new TransparantPanelControl()).ShowDialog();
         }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            (new JSONFILE()).ShowDialog();
+        }
     }
 }

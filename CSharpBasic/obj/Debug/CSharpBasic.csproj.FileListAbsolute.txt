@@ -325,3 +325,4 @@ C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.SlideFormContro
 C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.SubSlideForm1.resources
 C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.SubSlideForm2.resources
 C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.TransparantPanelControl.resources
+C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.JSONFILE.resources

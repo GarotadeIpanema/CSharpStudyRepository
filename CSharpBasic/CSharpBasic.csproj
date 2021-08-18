@@ -319,6 +319,12 @@
     <Compile Include="IsNumericCheck.Designer.cs">
       <DependentUpon>IsNumericCheck.cs</DependentUpon>
     </Compile>
+    <Compile Include="JSONFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JSONFILE.Designer.cs">
+      <DependentUpon>JSONFILE.cs</DependentUpon>
+    </Compile>
     <Compile Include="KakaoDefine.cs" />
     <Compile Include="KakaoLogin.cs">
       <SubType>Form</SubType>
@@ -689,6 +695,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IsNumericCheck.resx">
       <DependentUpon>IsNumericCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSONFILE.resx">
+      <DependentUpon>JSONFILE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KakaoLogin.resx">
       <DependentUpon>KakaoLogin.cs</DependentUpon>
