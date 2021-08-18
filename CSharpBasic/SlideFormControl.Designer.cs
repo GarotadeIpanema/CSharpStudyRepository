@@ -1,7 +1,7 @@
 ﻿
 namespace CSharpBasic
 {
-    partial class GradientButtonCOntrol
+    partial class SlideFormControl
     {
         /// <summary>
         /// Required designer variable.
@@ -35,24 +35,25 @@ namespace CSharpBasic
             // gradientButton1
             // 
             this.gradientButton1.Angle = 0F;
-            this.gradientButton1.Colors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192))))));
-            this.gradientButton1.Colors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192))))));
-            this.gradientButton1.Location = new System.Drawing.Point(165, 84);
+            this.gradientButton1.Colors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128))))));
+            this.gradientButton1.Colors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128))))));
+            this.gradientButton1.Location = new System.Drawing.Point(24, 30);
             this.gradientButton1.Name = "gradientButton1";
-            this.gradientButton1.Size = new System.Drawing.Size(476, 233);
+            this.gradientButton1.Size = new System.Drawing.Size(383, 145);
             this.gradientButton1.TabIndex = 0;
-            this.gradientButton1.Text = "gradientButton1";
+            this.gradientButton1.Text = "SlideForm";
             this.gradientButton1.Transparency = 64;
             this.gradientButton1.UseVisualStyleBackColor = true;
+            this.gradientButton1.Click += new System.EventHandler(this.gradientButton1_Click);
             // 
-            // GradientButtonCOntrol
+            // SlideFormControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(431, 192);
             this.Controls.Add(this.gradientButton1);
-            this.Name = "GradientButtonCOntrol";
-            this.Text = "GradientButtonCOntrol";
+            this.Name = "SlideFormControl";
+            this.Text = "SlideFormControl";
             this.ResumeLayout(false);
 
         }

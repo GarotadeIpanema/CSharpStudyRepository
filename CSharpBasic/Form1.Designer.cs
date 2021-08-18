@@ -87,6 +87,7 @@ namespace CSharpBasic
             this.button56 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
             this.button58 = new System.Windows.Forms.Button();
+            this.button59 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -686,11 +687,22 @@ namespace CSharpBasic
             this.button58.UseVisualStyleBackColor = true;
             this.button58.Click += new System.EventHandler(this.button58_Click);
             // 
+            // button59
+            // 
+            this.button59.Location = new System.Drawing.Point(685, 351);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(143, 23);
+            this.button59.TabIndex = 58;
+            this.button59.Text = "SlideFOrm COntrol";
+            this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button59);
             this.Controls.Add(this.button58);
             this.Controls.Add(this.button57);
             this.Controls.Add(this.button56);
@@ -815,6 +827,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button56;
         private System.Windows.Forms.Button button57;
         private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button button59;
     }
 }
 

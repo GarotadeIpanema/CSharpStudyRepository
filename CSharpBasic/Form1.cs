@@ -307,5 +307,10 @@ namespace CSharpBasic
         {
             (new GradientButtonCOntrol()).ShowDialog();
         }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            (new SlideFormControl()).ShowDialog();
+        }
     }
 }
