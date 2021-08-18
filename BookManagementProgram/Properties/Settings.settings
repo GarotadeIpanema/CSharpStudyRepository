@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BookManagementProgram.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LoginId" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="isLoginIdSave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="GmailID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mmscoding0000@gmail.com</Value>
+    </Setting>
+    <Setting Name="GmailPW" Type="System.String" Scope="User">
+      <Value Profile="(Default)">PythonDjango0@</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

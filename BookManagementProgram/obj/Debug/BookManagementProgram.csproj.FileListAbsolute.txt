@@ -1,0 +1,14 @@
+C:\Users\jjh\source\repos\test\BookManagementProgram\bin\Debug\BookManagementProgram.exe.config
+C:\Users\jjh\source\repos\test\BookManagementProgram\bin\Debug\BookManagementProgram.exe
+C:\Users\jjh\source\repos\test\BookManagementProgram\bin\Debug\BookManagementProgram.pdb
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.csprojAssemblyReference.cache
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.LOGIN.Login.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.Main.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.Properties.Resources.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.csproj.GenerateResource.cache
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.csproj.CoreCompileInputs.cache
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.exe
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.pdb
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\WindowsFormsApp1.CustomRoundButton.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.LOGIN.FindById.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.LOGIN.FindByPassword.resources
