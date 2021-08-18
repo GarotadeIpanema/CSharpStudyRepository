@@ -9,3 +9,6 @@
 .obj/
 /CSharpBasic/bin/Debug/swiftshader
 /CSharpBasic/Resources
+/CSharpBasic/bin/Debug
+/CSharpBasic/obj/Debug
+/packages

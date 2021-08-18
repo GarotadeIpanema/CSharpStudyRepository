@@ -302,5 +302,10 @@ namespace CSharpBasic
         {
             (new ImageButtonControl()).ShowDialog();
         }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            (new GradientButtonCOntrol()).ShowDialog();
+        }
     }
 }
