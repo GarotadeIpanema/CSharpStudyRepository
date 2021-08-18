@@ -1,7 +1,7 @@
 ﻿
 namespace CSharpBasic
 {
-    partial class GradientPanelControl
+    partial class TransparantPanelControl
     {
         /// <summary>
         /// Required designer variable.
@@ -29,34 +29,34 @@ namespace CSharpBasic
         /// </summary>
         private void InitializeComponent()
         {
-            this.gradientPanel1 = new CSharpBasic.GradientPanel();
+            this.transparentPanel1 = new CSharpBasic.TransparentPanel();
             this.SuspendLayout();
             // 
-            // gradientPanel1
+            // transparentPanel1
             // 
-            this.gradientPanel1.GraColorA = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.gradientPanel1.GraColorB = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.gradientPanel1.GradientFilStyle = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.gradientPanel1.Location = new System.Drawing.Point(109, 73);
-            this.gradientPanel1.Name = "gradientPanel1";
-            this.gradientPanel1.Size = new System.Drawing.Size(641, 315);
-            this.gradientPanel1.TabIndex = 0;
-            this.gradientPanel1.Text = "GradientPanel";
+            this.transparentPanel1.Location = new System.Drawing.Point(100, 79);
+            this.transparentPanel1.Name = "transparentPanel1";
+            this.transparentPanel1.Opacity = 50;
+            this.transparentPanel1.Size = new System.Drawing.Size(611, 311);
+            this.transparentPanel1.TabIndex = 0;
+            this.transparentPanel1.Text = "TransparentPanel";
             // 
-            // GradientPanelControl
+            // TransparantPanelControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.gradientPanel1);
-            this.Name = "GradientPanelControl";
-            this.Text = "GradientPanelControl";
+            this.Controls.Add(this.transparentPanel1);
+            this.Name = "TransparantPanelControl";
+            this.Text = "TransparantPanelControl";
+            this.Load += new System.EventHandler(this.TransparantPanelControl_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private GradientPanel gradientPanel1;
+        private TransparentPanel transparentPanel1;
     }
 }

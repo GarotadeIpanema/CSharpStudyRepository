@@ -317,5 +317,10 @@ namespace CSharpBasic
         {
             (new GradientPanelControl()).ShowDialog();
         }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            (new TransparantPanelControl()).ShowDialog();
+        }
     }
 }

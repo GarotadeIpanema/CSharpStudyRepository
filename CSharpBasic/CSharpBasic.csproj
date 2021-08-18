@@ -552,6 +552,18 @@
     <Compile Include="ThreadWithParameter.Designer.cs">
       <DependentUpon>ThreadWithParameter.cs</DependentUpon>
     </Compile>
+    <Compile Include="TransparantPanelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransparantPanelControl.Designer.cs">
+      <DependentUpon>TransparantPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentPanel.Designer.cs">
+      <DependentUpon>TransparentPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="TreeViewControll.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -789,6 +801,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThreadWithParameter.resx">
       <DependentUpon>ThreadWithParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparantPanelControl.resx">
+      <DependentUpon>TransparantPanelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreeViewControll.resx">
       <DependentUpon>TreeViewControll.cs</DependentUpon>

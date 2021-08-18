@@ -89,6 +89,7 @@ namespace CSharpBasic
             this.button58 = new System.Windows.Forms.Button();
             this.button59 = new System.Windows.Forms.Button();
             this.button60 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -708,11 +709,22 @@ namespace CSharpBasic
             this.button60.UseVisualStyleBackColor = true;
             this.button60.Click += new System.EventHandler(this.button60_Click);
             // 
+            // button61
+            // 
+            this.button61.Location = new System.Drawing.Point(33, 400);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(143, 23);
+            this.button61.TabIndex = 60;
+            this.button61.Text = "TransparantPanel";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button61);
             this.Controls.Add(this.button60);
             this.Controls.Add(this.button59);
             this.Controls.Add(this.button58);
@@ -841,6 +853,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button58;
         private System.Windows.Forms.Button button59;
         private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button61;
     }
 }
 
