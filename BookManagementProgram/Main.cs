@@ -1,4 +1,6 @@
 ﻿using BookManagementProgram.LOGIN;
+using BookManagementProgram.Model;
+using  BookManagementProgram.Repository;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,10 +15,28 @@ namespace BookManagementProgram
 {
     public partial class Main : Form
     {
+        User user = BookUserRepository.user;
+
         public Main()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
+
+            switch(user.authorityNo)
+            {
+                case 0:
+                    user_page.Visible = true;
+                    book_page.Visible = true;
+                    rental_page.Visible = true;
+                    break;
+                case 1:
+                    book_page.Visible = true;
+                    rental_page.Visible = true;
+                    break;
+                case 2:
+                    rental_page.Visible = true;
+                    break;
+            }
         }
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
         {

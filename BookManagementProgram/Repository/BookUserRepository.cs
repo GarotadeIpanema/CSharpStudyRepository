@@ -46,8 +46,8 @@ namespace BookManagementProgram.Repository
                             , SR[4].ToString()
                             , SR[5].ToString()
                             , SR[6].ToString()
-                            , SR[7].ToString()
-                            , SR[8].ToString()
+                            , (int)SR[7]
+                            , (int)SR[8]
                             );
                     }
                     SR.Close();

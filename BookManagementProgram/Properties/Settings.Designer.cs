@@ -37,7 +37,6 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool isLoginIdSave {
             get {
                 return ((bool)(this["isLoginIdSave"]));
