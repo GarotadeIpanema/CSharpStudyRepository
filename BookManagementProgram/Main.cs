@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookManagementProgram.LOGIN;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,10 +18,19 @@ namespace BookManagementProgram
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
-
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void home_close_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void home_changePassword_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new FindByPassword()).ShowDialog();
         }
     }
 }

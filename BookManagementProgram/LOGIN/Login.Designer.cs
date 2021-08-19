@@ -160,6 +160,7 @@ namespace BookManagementProgram.LOGIN
             this.pw_txt.PasswordChar = '*';
             this.pw_txt.Size = new System.Drawing.Size(297, 26);
             this.pw_txt.TabIndex = 4;
+            this.pw_txt.KeyUp += new System.Windows.Forms.KeyEventHandler(this.pw_txt_KeyUp);
             // 
             // label2
             // 

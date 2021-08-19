@@ -66,6 +66,20 @@ namespace BookManagementProgram.LOGIN
         // 로그인 버튼
         private void login_btn_Click(object sender, EventArgs e)
         {
+            doLogin();
+        }
+
+        // 비밀번호 텍스트 창
+        private void pw_txt_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                doLogin();
+            }
+        }
+
+        private void doLogin()
+        {
             if (string.IsNullOrEmpty(id_txt.Text))
             {
                 MessageBox.Show("아이디를 입력해주세요.");
@@ -78,7 +92,7 @@ namespace BookManagementProgram.LOGIN
                 pw_txt.Focus();
                 return;
             }
-            
+
             string result = userRepository.Login(id_txt.Text, pw_txt.Text);
             if (!result.All(char.IsDigit))
             {
@@ -108,6 +122,5 @@ namespace BookManagementProgram.LOGIN
             this.Hide();
         }
 
-        
     }
 }
