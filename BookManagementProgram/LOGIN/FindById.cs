@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using BookManagementProgram.Repository;
+using System;
 using System.Windows.Forms;
 
 namespace BookManagementProgram.LOGIN
 {
     public partial class FindById : Form
     {
+        BookUserRepository userRepository = new BookUserRepository();
         public FindById()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterParent;
         }
-
+        // 취소 버튼
         private void cancel_btn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // 아이디 찾기 버튼
         private void find_btn_Click(object sender, EventArgs e)
         {
             string memberNo = memberNumber_txt.Text;
@@ -41,7 +37,7 @@ namespace BookManagementProgram.LOGIN
                 return;
             }
 
-
+            MessageBox.Show(userRepository.FindById(memberNo, memberName));
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using BookManagementProgram.Repository;
+using System;
 using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Net.Mail;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,6 +13,7 @@ namespace BookManagementProgram.LOGIN
     {
         private int _duration = 0;
         private string _auth_code = "";
+        BookUserRepository userRepository = new BookUserRepository();
 
         public FindByPassword()
         {
@@ -56,7 +54,16 @@ namespace BookManagementProgram.LOGIN
         {
             if(CheckTextBox())
             {
-                MessageBox.Show("변경 완료");
+                if(newPassword_txt.Text.Length > 0)
+                {
+                    if(userRepository.FindByPassword(memberNumber_txt.Text, memberID_txt.Text, newPassword_txt.Text))
+                    {
+                        MessageBox.Show("비밀번호 변경 되었습니다");
+                        this.Close();
+                        return;
+                    }
+                    MessageBox.Show("비밀번호 변경에 실패하였습니다.");
+                }
             }
         }
 

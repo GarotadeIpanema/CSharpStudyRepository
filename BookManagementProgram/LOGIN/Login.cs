@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using BookManagementProgram.Repository;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BookManagementProgram.LOGIN
 {
     public partial class Login : Form
     {
+        BookUserRepository userRepository = new BookUserRepository();
         public Login()
         {
             InitializeComponent();
@@ -67,6 +63,7 @@ namespace BookManagementProgram.LOGIN
             (new FindByPassword()).ShowDialog();
         }
 
+        // 로그인 버튼
         private void login_btn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(id_txt.Text))
@@ -79,6 +76,13 @@ namespace BookManagementProgram.LOGIN
             {
                 MessageBox.Show("비밀번호를 입력해주세요.");
                 pw_txt.Focus();
+                return;
+            }
+            
+            string result = userRepository.Login(id_txt.Text, pw_txt.Text);
+            if (!result.All(char.IsDigit))
+            {
+                MessageBox.Show(result);
                 return;
             }
 

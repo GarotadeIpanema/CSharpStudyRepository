@@ -9,10 +9,22 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="GmailID" Type="System.String" Scope="User">
-      <Value Profile="(Default)">mmscoding0000@gmail.com</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="GmailPW" Type="System.String" Scope="User">
-      <Value Profile="(Default)">PythonDjango0@</Value>
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DBIP" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DBID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DBPW" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
     </Setting>
   </Settings>
 </SettingsFile>

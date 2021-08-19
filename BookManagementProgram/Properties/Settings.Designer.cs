@@ -49,7 +49,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("mmscoding0000@gmail.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string GmailID {
             get {
                 return ((string)(this["GmailID"]));
@@ -61,13 +61,61 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("PythonDjango0@")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string GmailPW {
             get {
                 return ((string)(this["GmailPW"]));
             }
             set {
                 this["GmailPW"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBIP {
+            get {
+                return ((string)(this["DBIP"]));
+            }
+            set {
+                this["DBIP"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBID {
+            get {
+                return ((string)(this["DBID"]));
+            }
+            set {
+                this["DBID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DBPW {
+            get {
+                return ((string)(this["DBPW"]));
+            }
+            set {
+                this["DBPW"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string DB {
+            get {
+                return ((string)(this["DB"]));
+            }
+            set {
+                this["DB"] = value;
             }
         }
     }
