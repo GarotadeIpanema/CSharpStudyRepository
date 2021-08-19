@@ -1,6 +1,9 @@
 ﻿using BookManagementProgram.Model;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
+using System.Net;
+using System.Net.Sockets;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -128,6 +131,54 @@ namespace BookManagementProgram.Repository
             {
                 conn.Close();
             }
+        }
+
+        public bool InsertLoginLog()
+        {
+            try
+            {
+                string sql = $"EXEC BOOK_LOGIN_I1 @USER_NO = {user.userNo}, @USER_ID = '{user.userId}', @ENTER_IP = '{GetExternalIPAddress()}';";
+
+                cmd.CommandText = sql;
+                conn.Open();
+
+                return cmd.ExecuteNonQuery() > 0 ? true : false;
+            }
+            catch (SqlException e)
+            {
+                return false;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        // 외부 IP
+        public static string GetExternalIPAddress()
+        {
+            string externalip = new WebClient().DownloadString("http://ipinfo.io/ip").Trim();
+
+            return externalip ?? GetInternalIPAddress();//null경우 내부 IP 반환;
+        }
+
+        // 내부
+        // DNS, 단순 도메인 이름 확인 기능이 제공
+        // GetGostEntity, 호스트 이름 또는 IP 주소를 IPHostEntry 인스턴스로 확인
+        // GetHostName, 로컬 컴퓨터의 호스트 이름을 가져온다
+        public static string GetInternalIPAddress()
+        {
+            var host = Dns.GetHostEntry(Dns.GetHostName());
+
+            foreach (var ip in host.AddressList)
+            {
+                if (ip.AddressFamily == AddressFamily.InterNetwork)
+                {
+                    return ip.ToString();
+                }
+            }
+
+            throw new Exception("인터넷 연결 없음");
         }
     }
 }

@@ -86,6 +86,12 @@ namespace BookManagementProgram.LOGIN
                 return;
             }
 
+            if (!userRepository.InsertLoginLog())
+            {
+                MessageBox.Show("인터넷을 연결해주세요.");
+                return;
+            }
+
             if (idSaveCheck_chk.Checked)
             {
                 SaveID();
@@ -101,5 +107,7 @@ namespace BookManagementProgram.LOGIN
 
             this.Hide();
         }
+
+        
     }
 }

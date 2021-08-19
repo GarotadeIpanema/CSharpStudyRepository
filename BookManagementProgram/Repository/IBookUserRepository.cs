@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BookManagementProgram.Repository
+﻿namespace BookManagementProgram.Repository
 {
     interface IBookUserRepository
     {
@@ -13,5 +7,7 @@ namespace BookManagementProgram.Repository
         string FindById(string userNo, string userName);
 
         bool FindByPassword(string userNo, string userId, string newPassword);
+
+        bool InsertLoginLog();
     }
 }
