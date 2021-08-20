@@ -1,5 +1,5 @@
 ﻿
-namespace BookManagementProgram.LOGIN
+namespace BookManagementProgram.XtraForm
 {
     partial class FindById
     {

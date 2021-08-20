@@ -34,10 +34,13 @@ namespace CSharpBasic
             // 
             // gradientButton1
             // 
+            this.gradientButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gradientButton1.Angle = 0F;
             this.gradientButton1.Colors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192))))));
             this.gradientButton1.Colors.Add(System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192))))));
-            this.gradientButton1.Location = new System.Drawing.Point(165, 84);
+            this.gradientButton1.Location = new System.Drawing.Point(210, 94);
             this.gradientButton1.Name = "gradientButton1";
             this.gradientButton1.Size = new System.Drawing.Size(476, 233);
             this.gradientButton1.TabIndex = 0;
@@ -49,8 +52,9 @@ namespace CSharpBasic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(920, 444);
             this.Controls.Add(this.gradientButton1);
+            this.MinimumSize = new System.Drawing.Size(936, 483);
             this.Name = "GradientButtonCOntrol";
             this.Text = "GradientButtonCOntrol";
             this.ResumeLayout(false);

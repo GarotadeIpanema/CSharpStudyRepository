@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace BookManagementProgram.LOGIN
+namespace BookManagementProgram.XtraForm
 {
     public partial class Login : Form
     {

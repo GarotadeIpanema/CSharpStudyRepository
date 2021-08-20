@@ -37,6 +37,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool isLoginIdSave {
             get {
                 return ((bool)(this["isLoginIdSave"]));
@@ -115,6 +116,42 @@ namespace BookManagementProgram.Properties {
             }
             set {
                 this["DB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TwiloSID {
+            get {
+                return ((string)(this["TwiloSID"]));
+            }
+            set {
+                this["TwiloSID"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TwiloToken {
+            get {
+                return ((string)(this["TwiloToken"]));
+            }
+            set {
+                this["TwiloToken"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string TwiloHost {
+            get {
+                return ((string)(this["TwiloHost"]));
+            }
+            set {
+                this["TwiloHost"] = value;
             }
         }
     }

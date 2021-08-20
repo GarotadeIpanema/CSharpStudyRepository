@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookManagementProgram.LOGIN
+namespace BookManagementProgram.XtraForm
 {
     public partial class FindByPassword : Form
     {

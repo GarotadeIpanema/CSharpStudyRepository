@@ -2,7 +2,7 @@
 using System;
 using System.Windows.Forms;
 
-namespace BookManagementProgram.LOGIN
+namespace BookManagementProgram.XtraForm
 {
     public partial class FindById : Form
     {

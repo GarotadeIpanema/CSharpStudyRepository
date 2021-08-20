@@ -16,7 +16,7 @@ namespace BookManagementProgram
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LOGIN.Login());
+            Application.Run(new XtraForm.Login());
         }
     }
 }

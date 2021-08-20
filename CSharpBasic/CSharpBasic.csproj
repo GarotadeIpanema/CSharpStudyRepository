@@ -606,6 +606,12 @@
     <Compile Include="WindowMultiThreading.Designer.cs">
       <DependentUpon>WindowMultiThreading.cs</DependentUpon>
     </Compile>
+    <Compile Include="Xtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra.Designer.cs">
+      <DependentUpon>Xtra.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AnonymouseMethod.resx">
       <DependentUpon>AnonymouseMethod.cs</DependentUpon>
     </EmbeddedResource>
@@ -831,6 +837,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowMultiThreading.resx">
       <DependentUpon>WindowMultiThreading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra.resx">
+      <DependentUpon>Xtra.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />

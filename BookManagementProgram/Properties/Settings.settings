@@ -6,7 +6,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="isLoginIdSave" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="GmailID" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
@@ -24,6 +24,15 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="DB" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TwiloSID" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TwiloToken" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="TwiloHost" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
   </Settings>

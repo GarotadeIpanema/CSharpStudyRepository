@@ -132,11 +132,13 @@ namespace BookManagementProgram
             // user_reset_btn
             // 
             this.user_reset_btn.Caption = "회원조회";
+            this.user_reset_btn.Hint = "사용자조회";
             this.user_reset_btn.Id = 4;
             this.user_reset_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("user_reset_btn.ImageOptions.Image")));
             this.user_reset_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("user_reset_btn.ImageOptions.LargeImage")));
             this.user_reset_btn.LargeWidth = 60;
             this.user_reset_btn.Name = "user_reset_btn";
+            this.user_reset_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.user_reset_btn_ItemClick);
             // 
             // user_add_btn
             // 
@@ -146,6 +148,7 @@ namespace BookManagementProgram
             this.user_add_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("user_add_btn.ImageOptions.LargeImage")));
             this.user_add_btn.LargeWidth = 60;
             this.user_add_btn.Name = "user_add_btn";
+            this.user_add_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.user_add_btn_ItemClick);
             // 
             // user_update_btn
             // 
@@ -167,12 +170,13 @@ namespace BookManagementProgram
             // 
             // user_search_btn
             // 
-            this.user_search_btn.Caption = "회원검색";
+            this.user_search_btn.Caption = "회원검색 (수정&삭제)";
             this.user_search_btn.Id = 8;
             this.user_search_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("user_search_btn.ImageOptions.Image")));
             this.user_search_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("user_search_btn.ImageOptions.LargeImage")));
             this.user_search_btn.LargeWidth = 60;
             this.user_search_btn.Name = "user_search_btn";
+            this.user_search_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.user_search_btn_ItemClick);
             // 
             // book_reset_btn
             // 
@@ -277,6 +281,7 @@ namespace BookManagementProgram
             this.home_chagePassword_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("home_chagePassword_btn.ImageOptions.LargeImage")));
             this.home_chagePassword_btn.LargeWidth = 60;
             this.home_chagePassword_btn.Name = "home_chagePassword_btn";
+            this.home_chagePassword_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.home_changePassword_btn_ItemClick);
             // 
             // home_page
             // 
@@ -311,8 +316,6 @@ namespace BookManagementProgram
             // 
             this.user_main_group.ItemLinks.Add(this.user_reset_btn);
             this.user_main_group.ItemLinks.Add(this.user_add_btn);
-            this.user_main_group.ItemLinks.Add(this.user_update_btn);
-            this.user_main_group.ItemLinks.Add(this.user_delete_btn);
             this.user_main_group.ItemLinks.Add(this.user_search_btn);
             this.user_main_group.Name = "user_main_group";
             this.user_main_group.Text = "메인";
@@ -355,14 +358,15 @@ namespace BookManagementProgram
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 575);
+            this.ClientSize = new System.Drawing.Size(880, 671);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "Main";
             this.Text = "Main";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

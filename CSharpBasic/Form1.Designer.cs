@@ -91,6 +91,7 @@ namespace CSharpBasic
             this.button60 = new System.Windows.Forms.Button();
             this.button61 = new System.Windows.Forms.Button();
             this.button62 = new System.Windows.Forms.Button();
+            this.button63 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -730,11 +731,22 @@ namespace CSharpBasic
             this.button62.UseVisualStyleBackColor = true;
             this.button62.Click += new System.EventHandler(this.button62_Click);
             // 
+            // button63
+            // 
+            this.button63.Location = new System.Drawing.Point(161, 389);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(101, 23);
+            this.button63.TabIndex = 62;
+            this.button63.Text = "Xtr";
+            this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.button63_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button63);
             this.Controls.Add(this.button62);
             this.Controls.Add(this.button61);
             this.Controls.Add(this.button60);
@@ -867,6 +879,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button60;
         private System.Windows.Forms.Button button61;
         private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.Button button63;
     }
 }
 
