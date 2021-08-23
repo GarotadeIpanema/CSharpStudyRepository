@@ -6,6 +6,7 @@ using System.Windows.Forms;
 using DevExpress.XtraTabbedMdi;
 using System.Reflection;
 using BookManagementProgram.UserControls;
+using BookManagementProgram.BookControls;
 
 namespace BookManagementProgram
 {
@@ -35,6 +36,11 @@ namespace BookManagementProgram
                     break;
             }
         }
+        // 유저 페이지 유저 조회 버튼
+        private void user_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MenuRun("UserSelectForm", user_reset_btn.Hint);
+        }
 
         // 폼 종료
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -52,6 +58,36 @@ namespace BookManagementProgram
         private void home_changePassword_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             (new FindByPassword()).ShowDialog();
+        }
+
+        // 유저 페이지 유저 등록 버튼
+        private void user_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new UserAddForm()).ShowDialog();
+        }
+
+        // 유저 페이지 유저 검색 버튼
+        private void user_search_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new UserSearchForm()).ShowDialog();
+        }
+
+        // 도서 페이지 유저 조회 버튼
+        private void book_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MenuRun("BookSelectForm", book_reset_btn.Hint);
+        }
+
+        // 도서 추가 버튼
+        private void book_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new BookAddForm()).ShowDialog();
+        }
+
+        // 도서 조회 버튼
+        private void book_search_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new BookSearchForm()).ShowDialog();
         }
 
         // 메인 폼 로드
@@ -106,11 +142,6 @@ namespace BookManagementProgram
             }
         }
 
-        // 유저 페이지 유저 조회 버튼
-        private void user_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MenuRun("UserSelectForm", user_reset_btn.Hint);
-        }
 
         // 메뉴 아이템에 따라 MID Child 생성
         private void MenuRun(string Menu, string FormTitle)
@@ -132,6 +163,13 @@ namespace BookManagementProgram
                 string FileName = "UserSelectForm";
                 frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, FileName));
             }
+            else if(Menu.Equals("BookSelectForm"))
+            {
+                nameSpace = "BookManagementProgram.BookControls";
+                System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
+                string FileName = "BookSelectForm";
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, FileName));
+            }
 
             if (frm != null)
             {
@@ -146,16 +184,5 @@ namespace BookManagementProgram
             }
         }
 
-        // 유저 페이지 유저 등록 버튼
-        private void user_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new UserAddForm()).ShowDialog();
-        }
-
-        // 유저 페이지 유저 검색 버튼
-        private void user_search_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new UserSearchForm()).ShowDialog();
-        }
     }
 }

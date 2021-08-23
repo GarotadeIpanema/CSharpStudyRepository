@@ -92,6 +92,7 @@ namespace CSharpBasic
             this.button61 = new System.Windows.Forms.Button();
             this.button62 = new System.Windows.Forms.Button();
             this.button63 = new System.Windows.Forms.Button();
+            this.button64 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -741,11 +742,22 @@ namespace CSharpBasic
             this.button63.UseVisualStyleBackColor = true;
             this.button63.Click += new System.EventHandler(this.button63_Click);
             // 
+            // button64
+            // 
+            this.button64.Location = new System.Drawing.Point(275, 389);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(101, 23);
+            this.button64.TabIndex = 63;
+            this.button64.Text = "ImageSaveForm";
+            this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.button64_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button64);
             this.Controls.Add(this.button63);
             this.Controls.Add(this.button62);
             this.Controls.Add(this.button61);
@@ -880,6 +892,7 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button61;
         private System.Windows.Forms.Button button62;
         private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button64;
     }
 }
 

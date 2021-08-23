@@ -170,7 +170,7 @@ namespace BookManagementProgram
             // 
             // user_search_btn
             // 
-            this.user_search_btn.Caption = "회원검색 (수정&삭제)";
+            this.user_search_btn.Caption = "회원검색 (수정,삭제)";
             this.user_search_btn.Id = 8;
             this.user_search_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("user_search_btn.ImageOptions.Image")));
             this.user_search_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("user_search_btn.ImageOptions.LargeImage")));
@@ -181,11 +181,13 @@ namespace BookManagementProgram
             // book_reset_btn
             // 
             this.book_reset_btn.Caption = "도서 조회";
+            this.book_reset_btn.Hint = "도서 조회";
             this.book_reset_btn.Id = 9;
             this.book_reset_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("book_reset_btn.ImageOptions.Image")));
             this.book_reset_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("book_reset_btn.ImageOptions.LargeImage")));
             this.book_reset_btn.LargeWidth = 60;
             this.book_reset_btn.Name = "book_reset_btn";
+            this.book_reset_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.book_reset_btn_ItemClick);
             // 
             // book_add_btn
             // 
@@ -195,6 +197,7 @@ namespace BookManagementProgram
             this.book_add_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("book_add_btn.ImageOptions.LargeImage")));
             this.book_add_btn.LargeWidth = 60;
             this.book_add_btn.Name = "book_add_btn";
+            this.book_add_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.book_add_btn_ItemClick);
             // 
             // book_update_btn
             // 
@@ -216,12 +219,13 @@ namespace BookManagementProgram
             // 
             // book_search_btn
             // 
-            this.book_search_btn.Caption = "도서 조회";
+            this.book_search_btn.Caption = "도서 조회 (수정,삭제)";
             this.book_search_btn.Id = 13;
             this.book_search_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("book_search_btn.ImageOptions.Image")));
             this.book_search_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("book_search_btn.ImageOptions.LargeImage")));
             this.book_search_btn.LargeWidth = 60;
             this.book_search_btn.Name = "book_search_btn";
+            this.book_search_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.book_search_btn_ItemClick);
             // 
             // rental_reset_btn
             // 
@@ -332,8 +336,6 @@ namespace BookManagementProgram
             // 
             this.book_main_group.ItemLinks.Add(this.book_reset_btn);
             this.book_main_group.ItemLinks.Add(this.book_add_btn);
-            this.book_main_group.ItemLinks.Add(this.book_update_btn);
-            this.book_main_group.ItemLinks.Add(this.book_delete_btn);
             this.book_main_group.ItemLinks.Add(this.book_search_btn);
             this.book_main_group.Name = "book_main_group";
             this.book_main_group.Text = "메인";

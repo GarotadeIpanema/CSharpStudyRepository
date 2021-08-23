@@ -21,8 +21,8 @@ namespace Barcode
         private void button1_Click(object sender, EventArgs e)
         {
             CodeQrBarcodeDraw qrcode = BarcodeDrawFactory.CodeQr; // 바코드 : Code128WithChecksum, QR : CodeQr
-            var qrimage = qrcode.Draw("https://www.naver.com", 50);
-            qrimage.Save(@"C:\Users\jjh\Desktop\img\a.jpg");
+            var qrimage = qrcode.Draw("10002", 50);
+            qrimage.Save(@"C:\Users\jjh\Desktop\mms\_Src\a.jpg");
         }
     }
 }

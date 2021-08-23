@@ -326,3 +326,5 @@ C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.SubSlideForm1.r
 C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.SubSlideForm2.resources
 C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.TransparantPanelControl.resources
 C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.JSONFILE.resources
+C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.ImageSaveForm.resources
+C:\Users\jjh\source\repos\test\CSharpBasic\obj\Debug\CSharpBasic.Xtra.resources

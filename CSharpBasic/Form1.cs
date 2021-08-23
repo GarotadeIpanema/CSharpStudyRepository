@@ -332,5 +332,10 @@ namespace CSharpBasic
         {
             (new Xtra()).ShowDialog();
         }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            (new ImageSaveForm()).ShowDialog();
+        }
     }
 }
