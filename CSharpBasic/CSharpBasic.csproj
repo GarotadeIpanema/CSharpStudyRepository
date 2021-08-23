@@ -107,6 +107,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -240,6 +241,30 @@
     <Compile Include="GenericMethod.Designer.cs">
       <DependentUpon>GenericMethod.cs</DependentUpon>
     </Compile>
+    <Compile Include="GradientButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradientButton.Designer.cs">
+      <DependentUpon>GradientButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientButtonCOntrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradientButtonCOntrol.Designer.cs">
+      <DependentUpon>GradientButtonCOntrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GradientPanel.Designer.cs">
+      <DependentUpon>GradientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GradientPanelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GradientPanelControl.Designer.cs">
+      <DependentUpon>GradientPanelControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="GridControllAddDelete.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -276,6 +301,12 @@
     <Compile Include="ImageButtonControl.Designer.cs">
       <DependentUpon>ImageButtonControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImageSaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageSaveForm.Designer.cs">
+      <DependentUpon>ImageSaveForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ImageViewer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,6 +324,12 @@
     </Compile>
     <Compile Include="IsNumericCheck.Designer.cs">
       <DependentUpon>IsNumericCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JSONFILE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JSONFILE.Designer.cs">
+      <DependentUpon>JSONFILE.cs</DependentUpon>
     </Compile>
     <Compile Include="KakaoDefine.cs" />
     <Compile Include="KakaoLogin.cs">
@@ -473,6 +510,18 @@
     <Compile Include="ShadowGradientLabelControl.Designer.cs">
       <DependentUpon>ShadowGradientLabelControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="SlideForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlideForm.Designer.cs">
+      <DependentUpon>SlideForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SlideFormControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SlideFormControl.Designer.cs">
+      <DependentUpon>SlideFormControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="SplashScreen1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -491,6 +540,18 @@
     <Compile Include="STACKAlgorithm.Designer.cs">
       <DependentUpon>STACKAlgorithm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubSlideForm1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubSlideForm1.Designer.cs">
+      <DependentUpon>SubSlideForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubSlideForm2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubSlideForm2.Designer.cs">
+      <DependentUpon>SubSlideForm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="TabConrolDynamicPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -502,6 +563,18 @@
     </Compile>
     <Compile Include="ThreadWithParameter.Designer.cs">
       <DependentUpon>ThreadWithParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparantPanelControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransparantPanelControl.Designer.cs">
+      <DependentUpon>TransparantPanelControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TransparentPanel.Designer.cs">
+      <DependentUpon>TransparentPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="TreeViewControll.cs">
       <SubType>Form</SubType>
@@ -538,6 +611,12 @@
     </Compile>
     <Compile Include="WindowMultiThreading.Designer.cs">
       <DependentUpon>WindowMultiThreading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xtra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xtra.Designer.cs">
+      <DependentUpon>Xtra.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AnonymouseMethod.resx">
       <DependentUpon>AnonymouseMethod.cs</DependentUpon>
@@ -599,6 +678,12 @@
     <EmbeddedResource Include="GenericMethod.resx">
       <DependentUpon>GenericMethod.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GradientButtonCOntrol.resx">
+      <DependentUpon>GradientButtonCOntrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GradientPanelControl.resx">
+      <DependentUpon>GradientPanelControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GridControllAddDelete.resx">
       <DependentUpon>GridControllAddDelete.cs</DependentUpon>
     </EmbeddedResource>
@@ -614,6 +699,9 @@
     <EmbeddedResource Include="ImageButtonControl.resx">
       <DependentUpon>ImageButtonControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ImageSaveForm.resx">
+      <DependentUpon>ImageSaveForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ImageViewer.resx">
       <DependentUpon>ImageViewer.cs</DependentUpon>
     </EmbeddedResource>
@@ -622,6 +710,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IsNumericCheck.resx">
       <DependentUpon>IsNumericCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JSONFILE.resx">
+      <DependentUpon>JSONFILE.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KakaoLogin.resx">
       <DependentUpon>KakaoLogin.cs</DependentUpon>
@@ -708,6 +799,12 @@
     <EmbeddedResource Include="ShadowGradientLabelControl.resx">
       <DependentUpon>ShadowGradientLabelControl.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SlideForm.resx">
+      <DependentUpon>SlideForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SlideFormControl.resx">
+      <DependentUpon>SlideFormControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SplashScreen1.resx">
       <DependentUpon>SplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
@@ -717,11 +814,20 @@
     <EmbeddedResource Include="STACKAlgorithm.resx">
       <DependentUpon>STACKAlgorithm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SubSlideForm1.resx">
+      <DependentUpon>SubSlideForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubSlideForm2.resx">
+      <DependentUpon>SubSlideForm2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TabConrolDynamicPage.resx">
       <DependentUpon>TabConrolDynamicPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThreadWithParameter.resx">
       <DependentUpon>ThreadWithParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransparantPanelControl.resx">
+      <DependentUpon>TransparantPanelControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TreeViewControll.resx">
       <DependentUpon>TreeViewControll.cs</DependentUpon>
@@ -740,6 +846,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WindowMultiThreading.resx">
       <DependentUpon>WindowMultiThreading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Xtra.resx">
+      <DependentUpon>Xtra.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\app.manifest" />

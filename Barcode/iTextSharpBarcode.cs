@@ -23,7 +23,7 @@ namespace Barcode
             Barcode39 barcode39 = new Barcode39(); // Barcode39 인스턴스 생성
             barcode39.Code = code; // Code 프로퍼티에 바코드에 출력될 스트링을 대입
             barcode39.BarHeight = 50f; // 바코드의 높이 지정
-            barcode39.CreateDrawingImage(Color.Black, Color.White).Save(@"C:\Users\jjh\Desktop\img\barcode.png"); // 바코드 이미지 저장
+            barcode39.CreateDrawingImage(Color.Black, Color.White).Save(@"C:\Users\jjh\Desktop\mms\_Src\barcode.png"); // 바코드 이미지 저장
         }
 
         private void button1_Click(object sender, EventArgs e)

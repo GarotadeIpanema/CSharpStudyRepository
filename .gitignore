@@ -9,3 +9,12 @@
 .obj/
 /CSharpBasic/bin/Debug/swiftshader
 /CSharpBasic/Resources
+/CSharpBasic/bin/Debug
+/CSharpBasic/obj/Debug
+/packages
+/BookManagementProgram/bin/Debug/de
+/BookManagementProgram/bin/Debug/es
+/BookManagementProgram/bin/Debug/ja
+/BookManagementProgram/bin/Debug/ru
+/BookManagementProgram/bin/Debug
+/BookManagementProgram/obj/Debug

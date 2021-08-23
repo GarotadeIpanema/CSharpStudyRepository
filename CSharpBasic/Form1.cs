@@ -302,5 +302,40 @@ namespace CSharpBasic
         {
             (new ImageButtonControl()).ShowDialog();
         }
+
+        private void button58_Click(object sender, EventArgs e)
+        {
+            (new GradientButtonCOntrol()).ShowDialog();
+        }
+
+        private void button59_Click(object sender, EventArgs e)
+        {
+            (new SlideFormControl()).ShowDialog();
+        }
+
+        private void button60_Click(object sender, EventArgs e)
+        {
+            (new GradientPanelControl()).ShowDialog();
+        }
+
+        private void button61_Click(object sender, EventArgs e)
+        {
+            (new TransparantPanelControl()).ShowDialog();
+        }
+
+        private void button62_Click(object sender, EventArgs e)
+        {
+            (new JSONFILE()).ShowDialog();
+        }
+
+        private void button63_Click(object sender, EventArgs e)
+        {
+            (new Xtra()).ShowDialog();
+        }
+
+        private void button64_Click(object sender, EventArgs e)
+        {
+            (new ImageSaveForm()).ShowDialog();
+        }
     }
 }

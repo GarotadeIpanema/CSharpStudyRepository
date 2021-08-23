@@ -86,6 +86,13 @@ namespace CSharpBasic
             this.button55 = new System.Windows.Forms.Button();
             this.button56 = new System.Windows.Forms.Button();
             this.button57 = new System.Windows.Forms.Button();
+            this.button58 = new System.Windows.Forms.Button();
+            this.button59 = new System.Windows.Forms.Button();
+            this.button60 = new System.Windows.Forms.Button();
+            this.button61 = new System.Windows.Forms.Button();
+            this.button62 = new System.Windows.Forms.Button();
+            this.button63 = new System.Windows.Forms.Button();
+            this.button64 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -669,17 +676,94 @@ namespace CSharpBasic
             // 
             this.button57.Location = new System.Drawing.Point(410, 351);
             this.button57.Name = "button57";
-            this.button57.Size = new System.Drawing.Size(175, 23);
+            this.button57.Size = new System.Drawing.Size(120, 23);
             this.button57.TabIndex = 56;
             this.button57.Text = "ImageButton";
             this.button57.UseVisualStyleBackColor = true;
             this.button57.Click += new System.EventHandler(this.button57_Click);
+            // 
+            // button58
+            // 
+            this.button58.Location = new System.Drawing.Point(536, 351);
+            this.button58.Name = "button58";
+            this.button58.Size = new System.Drawing.Size(143, 23);
+            this.button58.TabIndex = 57;
+            this.button58.Text = "GradientButton";
+            this.button58.UseVisualStyleBackColor = true;
+            this.button58.Click += new System.EventHandler(this.button58_Click);
+            // 
+            // button59
+            // 
+            this.button59.Location = new System.Drawing.Point(685, 351);
+            this.button59.Name = "button59";
+            this.button59.Size = new System.Drawing.Size(143, 23);
+            this.button59.TabIndex = 58;
+            this.button59.Text = "SlideFOrm COntrol";
+            this.button59.UseVisualStyleBackColor = true;
+            this.button59.Click += new System.EventHandler(this.button59_Click);
+            // 
+            // button60
+            // 
+            this.button60.Location = new System.Drawing.Point(834, 351);
+            this.button60.Name = "button60";
+            this.button60.Size = new System.Drawing.Size(143, 23);
+            this.button60.TabIndex = 59;
+            this.button60.Text = "GradinetPanel";
+            this.button60.UseVisualStyleBackColor = true;
+            this.button60.Click += new System.EventHandler(this.button60_Click);
+            // 
+            // button61
+            // 
+            this.button61.Location = new System.Drawing.Point(983, 351);
+            this.button61.Name = "button61";
+            this.button61.Size = new System.Drawing.Size(143, 23);
+            this.button61.TabIndex = 60;
+            this.button61.Text = "TransparantPanel";
+            this.button61.UseVisualStyleBackColor = true;
+            this.button61.Click += new System.EventHandler(this.button61_Click);
+            // 
+            // button62
+            // 
+            this.button62.Location = new System.Drawing.Point(38, 389);
+            this.button62.Name = "button62";
+            this.button62.Size = new System.Drawing.Size(101, 23);
+            this.button62.TabIndex = 61;
+            this.button62.Text = "JsonFile";
+            this.button62.UseVisualStyleBackColor = true;
+            this.button62.Click += new System.EventHandler(this.button62_Click);
+            // 
+            // button63
+            // 
+            this.button63.Location = new System.Drawing.Point(161, 389);
+            this.button63.Name = "button63";
+            this.button63.Size = new System.Drawing.Size(101, 23);
+            this.button63.TabIndex = 62;
+            this.button63.Text = "Xtr";
+            this.button63.UseVisualStyleBackColor = true;
+            this.button63.Click += new System.EventHandler(this.button63_Click);
+            // 
+            // button64
+            // 
+            this.button64.Location = new System.Drawing.Point(275, 389);
+            this.button64.Name = "button64";
+            this.button64.Size = new System.Drawing.Size(101, 23);
+            this.button64.TabIndex = 63;
+            this.button64.Text = "ImageSaveForm";
+            this.button64.UseVisualStyleBackColor = true;
+            this.button64.Click += new System.EventHandler(this.button64_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1189, 450);
+            this.Controls.Add(this.button64);
+            this.Controls.Add(this.button63);
+            this.Controls.Add(this.button62);
+            this.Controls.Add(this.button61);
+            this.Controls.Add(this.button60);
+            this.Controls.Add(this.button59);
+            this.Controls.Add(this.button58);
             this.Controls.Add(this.button57);
             this.Controls.Add(this.button56);
             this.Controls.Add(this.button55);
@@ -802,6 +886,13 @@ namespace CSharpBasic
         private System.Windows.Forms.Button button55;
         private System.Windows.Forms.Button button56;
         private System.Windows.Forms.Button button57;
+        private System.Windows.Forms.Button button58;
+        private System.Windows.Forms.Button button59;
+        private System.Windows.Forms.Button button60;
+        private System.Windows.Forms.Button button61;
+        private System.Windows.Forms.Button button62;
+        private System.Windows.Forms.Button button63;
+        private System.Windows.Forms.Button button64;
     }
 }
 

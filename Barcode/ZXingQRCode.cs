@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,6 +25,10 @@ namespace Barcode
         // qr 생성
         private void button1_Click(object sender, EventArgs e)
         {
+            // 인코딩설정
+            Hashtable htHint = new Hashtable();
+            if(cbUTF)
+
             string str = textBox1.Text;
             // instance a writer object
             var barcodeWrite = new BarcodeWriter();

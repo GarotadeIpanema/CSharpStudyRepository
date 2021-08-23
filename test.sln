@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kiosk", "kiosk\kiosk.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewCloling", "NewCloling\NewCloling.csproj", "{A3520DE8-E6B1-4BCD-997A-8DC144383B09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagementProgram", "BookManagementProgram\BookManagementProgram.csproj", "{458E4146-45BB-4800-AD55-8D990D21761A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -261,6 +263,14 @@ Global
 		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Release|x64.ActiveCfg = Release|Any CPU
 		{A3520DE8-E6B1-4BCD-997A-8DC144383B09}.Release|x64.Build.0 = Release|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Debug|x64.Build.0 = Debug|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Release|x64.ActiveCfg = Release|Any CPU
+		{458E4146-45BB-4800-AD55-8D990D21761A}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
