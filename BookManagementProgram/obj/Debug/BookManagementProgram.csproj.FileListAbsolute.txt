@@ -204,3 +204,8 @@ C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementPro
 C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.BookControls.BookSelectForm.resources
 C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.BookControls.BookAddForm.resources
 C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.BookControls.BookSearchForm.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.RentalControls.SelectDelinquentForm.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.RentalControls.SelectRentalForm.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.RentalControls.AddRentalForm.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.RentalControls.ReturnBookForm.resources
+C:\Users\jjh\source\repos\test\BookManagementProgram\obj\Debug\BookManagementProgram.RentalControls.SelectRentalHistory.resources

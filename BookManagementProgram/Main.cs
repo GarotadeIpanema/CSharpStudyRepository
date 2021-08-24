@@ -7,6 +7,7 @@ using DevExpress.XtraTabbedMdi;
 using System.Reflection;
 using BookManagementProgram.UserControls;
 using BookManagementProgram.BookControls;
+using BookManagementProgram.RentalControls;
 
 namespace BookManagementProgram
 {
@@ -89,13 +90,44 @@ namespace BookManagementProgram
         {
             (new BookSearchForm()).ShowDialog();
         }
+        // 렌탈 조회 버튼
+        private void rental_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MenuRun("SelectRentalForm", rental_reset_btn.Hint);
+        }
+
+        // 연체자 조회 버튼
+        private void overdue_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MenuRun("SelectDelinquentForm", rental_return_btn.Hint);
+        }
+        // 렌탈 등록버튼
+        private void rental_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new AddRentalForm()).ShowDialog();
+        }
+        // 반납 확인 버튼
+        private void rental_return_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            (new ReturnBookForm()).ShowDialog();
+        }
+        // 렌탈 히스토리 폼
+        private void rental_log_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MenuRun("SelectRentalHistory", rental_log_btn.Hint);
+        }
+        // 홈버튼
+        private void home_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            MenuRun("MainPageForm", home_btn.Hint);
+        }
 
         // 메인 폼 로드
         private void Main_Load(object sender, EventArgs e)
         {
             ChildFormAdd();
 
-            Home();
+            MenuRun("MainPageForm", home_btn.Hint);
         }
 
         // MID Child Form추가
@@ -155,20 +187,43 @@ namespace BookManagementProgram
                     item.Close();
                 }
             }
+
             Form frm = null;
             if (Menu.Equals("UserSelectForm"))
             {
                 nameSpace = "BookManagementProgram.UserControls";
                 System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
-                string FileName = "UserSelectForm";
-                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, FileName));
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, Menu));
             }
             else if(Menu.Equals("BookSelectForm"))
             {
                 nameSpace = "BookManagementProgram.BookControls";
                 System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
-                string FileName = "BookSelectForm";
-                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, FileName));
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, Menu));
+            }
+            else if (Menu.Equals("SelectRentalForm"))
+            {
+                nameSpace = "BookManagementProgram.RentalControls";
+                System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, Menu));
+            }
+            else if (Menu.Equals("SelectDelinquentForm"))
+            {
+                nameSpace = "BookManagementProgram.RentalControls";
+                System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, Menu));
+            }
+            else if (Menu.Equals("SelectRentalHistory"))
+            {
+                nameSpace = "BookManagementProgram.RentalControls";
+                System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, Menu));
+            }
+            else if (Menu.Equals("MainPageForm"))
+            {
+                nameSpace = "BookManagementProgram.MainControls";
+                System.Reflection.Assembly assembly = System.Reflection.Assembly.Load("BookManagementProgram");
+                frm = (Form)assembly.CreateInstance(string.Format("{0}.{1}", nameSpace, Menu));
             }
 
             if (frm != null)
@@ -184,5 +239,6 @@ namespace BookManagementProgram
             }
         }
 
+        
     }
 }

@@ -1,21 +1,28 @@
 ﻿using BookManagementProgram.Repository;
 using DevExpress.XtraGrid.Views.Grid;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Diagnostics;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BookManagementProgram.UserControls
+namespace BookManagementProgram.RentalControls
 {
-    public partial class UserSelectForm : Form
+    public partial class SelectRentalHistory : Form
     {
-        BookUserRepository userRepository = null;
-
-        public UserSelectForm()
+        BookRentalRepository rentalRepository = null;
+        public SelectRentalHistory()
         {
             InitializeComponent();
-            userRepository = new BookUserRepository();
+            rentalRepository = new BookRentalRepository();
 
             InitGridControl();
-            this.gridControl1.DataSource = userRepository.GetAllUsers();
+            this.gridControl1.DataSource = rentalRepository.GetRentalHistory();
         }
 
         private void InitGridControl()
@@ -25,17 +32,18 @@ namespace BookManagementProgram.UserControls
             gv.OptionsBehavior.Editable = false;
         }
 
-        private void simpleButton1_Click(object sender, System.EventArgs e)
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.FileName = "사용자기록";
+            saveFileDialog.FileName = "전체렌탈기록";
             saveFileDialog.Filter = "Excel |*.xlsx";
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if(saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string path = saveFileDialog.FileName;
                 gridControl1.ExportToXlsx(path);
                 Process.Start(path);
             }
+            
         }
     }
 }

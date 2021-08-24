@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,6 +31,19 @@ namespace BookManagementProgram.BookControls
             GridView gv = this.gridControl1.MainView as GridView;
             gv.OptionsView.ShowGroupPanel = false;
             gv.OptionsBehavior.Editable = false;
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.FileName = "도서기록";
+            saveFileDialog.Filter = "Excel |*.xlsx";
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string path = saveFileDialog.FileName;
+                gridControl1.ExportToXlsx(path);
+                Process.Start(path);
+            }
         }
     }
 }

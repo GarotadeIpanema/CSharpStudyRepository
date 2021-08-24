@@ -31,7 +31,7 @@ namespace BookManagementProgram
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.home_reset_btn = new DevExpress.XtraBars.BarButtonItem();
+            this.home_btn = new DevExpress.XtraBars.BarButtonItem();
             this.home_changePassword_btn = new DevExpress.XtraBars.BarButtonItem();
             this.home_close_btn = new DevExpress.XtraBars.BarButtonItem();
             this.user_reset_btn = new DevExpress.XtraBars.BarButtonItem();
@@ -69,7 +69,7 @@ namespace BookManagementProgram
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
             this.ribbonControl1.SearchEditItem,
-            this.home_reset_btn,
+            this.home_btn,
             this.home_changePassword_btn,
             this.home_close_btn,
             this.user_reset_btn,
@@ -98,16 +98,18 @@ namespace BookManagementProgram
             this.book_page,
             this.rental_page});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.Size = new System.Drawing.Size(880, 152);
+            this.ribbonControl1.Size = new System.Drawing.Size(926, 152);
             // 
-            // home_reset_btn
+            // home_btn
             // 
-            this.home_reset_btn.Caption = "조회";
-            this.home_reset_btn.Id = 1;
-            this.home_reset_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("home_reset_btn.ImageOptions.Image")));
-            this.home_reset_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("home_reset_btn.ImageOptions.LargeImage")));
-            this.home_reset_btn.LargeWidth = 60;
-            this.home_reset_btn.Name = "home_reset_btn";
+            this.home_btn.Caption = "홈";
+            this.home_btn.Hint = "메인페이지";
+            this.home_btn.Id = 1;
+            this.home_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("home_reset_btn.ImageOptions.Image")));
+            this.home_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("home_reset_btn.ImageOptions.LargeImage")));
+            this.home_btn.LargeWidth = 60;
+            this.home_btn.Name = "home_btn";
+            this.home_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.home_btn_ItemClick);
             // 
             // home_changePassword_btn
             // 
@@ -230,20 +232,24 @@ namespace BookManagementProgram
             // rental_reset_btn
             // 
             this.rental_reset_btn.Caption = "렌탈 조회";
+            this.rental_reset_btn.Hint = "렌탈 조회";
             this.rental_reset_btn.Id = 14;
             this.rental_reset_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("rental_reset_btn.ImageOptions.Image")));
             this.rental_reset_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("rental_reset_btn.ImageOptions.LargeImage")));
             this.rental_reset_btn.LargeWidth = 60;
             this.rental_reset_btn.Name = "rental_reset_btn";
+            this.rental_reset_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rental_reset_btn_ItemClick);
             // 
             // overdue_reset_btn
             // 
             this.overdue_reset_btn.Caption = "연체자 조회";
+            this.overdue_reset_btn.Hint = "연체자 조회";
             this.overdue_reset_btn.Id = 15;
             this.overdue_reset_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("overdue_reset_btn.ImageOptions.Image")));
             this.overdue_reset_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("overdue_reset_btn.ImageOptions.LargeImage")));
             this.overdue_reset_btn.LargeWidth = 60;
             this.overdue_reset_btn.Name = "overdue_reset_btn";
+            this.overdue_reset_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.overdue_reset_btn_ItemClick);
             // 
             // rental_add_btn
             // 
@@ -253,6 +259,7 @@ namespace BookManagementProgram
             this.rental_add_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("rental_add_btn.ImageOptions.LargeImage")));
             this.rental_add_btn.LargeWidth = 60;
             this.rental_add_btn.Name = "rental_add_btn";
+            this.rental_add_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rental_add_btn_ItemClick);
             // 
             // rental_return_btn
             // 
@@ -262,14 +269,17 @@ namespace BookManagementProgram
             this.rental_return_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("rental_return_btn.ImageOptions.LargeImage")));
             this.rental_return_btn.LargeWidth = 60;
             this.rental_return_btn.Name = "rental_return_btn";
+            this.rental_return_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rental_return_btn_ItemClick);
             // 
             // rental_log_btn
             // 
             this.rental_log_btn.Caption = "기록조회";
+            this.rental_log_btn.Hint = "기록조회";
             this.rental_log_btn.Id = 18;
             this.rental_log_btn.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("rental_log_btn.ImageOptions.LargeImage")));
             this.rental_log_btn.LargeWidth = 60;
             this.rental_log_btn.Name = "rental_log_btn";
+            this.rental_log_btn.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.rental_log_btn_ItemClick);
             // 
             // barButtonItem1
             // 
@@ -297,7 +307,7 @@ namespace BookManagementProgram
             // 
             // home_main_group
             // 
-            this.home_main_group.ItemLinks.Add(this.home_reset_btn);
+            this.home_main_group.ItemLinks.Add(this.home_btn);
             this.home_main_group.Name = "home_main_group";
             this.home_main_group.Text = "메인";
             // 
@@ -362,7 +372,7 @@ namespace BookManagementProgram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 671);
+            this.ClientSize = new System.Drawing.Size(926, 671);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Name = "Main";
@@ -382,7 +392,7 @@ namespace BookManagementProgram
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup home_main_group;
         private DevExpress.XtraBars.Ribbon.RibbonPage user_page;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup user_main_group;
-        private DevExpress.XtraBars.BarButtonItem home_reset_btn;
+        private DevExpress.XtraBars.BarButtonItem home_btn;
         private DevExpress.XtraBars.BarButtonItem home_changePassword_btn;
         private DevExpress.XtraBars.BarButtonItem home_close_btn;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup home_other_group;

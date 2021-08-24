@@ -277,6 +277,33 @@ namespace BookManagementProgram.Repository
             }
         }
 
+        // 랜덤하게 1개의 도서 받아오는 메서드
+        public DataTable GetRandomBook()
+        {
+            DataTable dt = null;
+            try
+            {
+                string sql = $"EXEC BOOK_BOOK_S6;";
 
+                cmd.CommandText = sql;
+                conn.Open();
+
+                // 데이터 출력
+                using (SqlDataReader SR = cmd.ExecuteReader())
+                {
+                    dt = new DataTable();
+                    dt.Load(SR);
+                }
+                return dt;
+            }
+            catch (SqlException e)
+            {
+                return dt;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
