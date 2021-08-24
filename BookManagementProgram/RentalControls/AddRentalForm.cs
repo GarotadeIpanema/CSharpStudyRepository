@@ -20,6 +20,7 @@ namespace BookManagementProgram.RentalControls
         public AddRentalForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
 
             rental_date_txt.Text = DateTime.Now.ToString("yyyy.MM.dd");
             return_date_txt.Text = DateTime.Now.AddDays(7).ToString("yyyy.MM.dd");

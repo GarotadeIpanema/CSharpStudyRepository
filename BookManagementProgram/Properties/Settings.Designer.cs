@@ -49,7 +49,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("mmscoding0000@gmail.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string GmailID {
             get {
                 return ((string)(this["GmailID"]));
@@ -61,7 +61,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("PythonDjango0@")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string GmailPW {
             get {
                 return ((string)(this["GmailPW"]));
@@ -73,7 +73,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("218.234.193.220,1433")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DBIP {
             get {
                 return ((string)(this["DBIP"]));
@@ -85,7 +85,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("TBM")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DBID {
             get {
                 return ((string)(this["DBID"]));
@@ -97,7 +97,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("dong8844!@#$%^&*()")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DBPW {
             get {
                 return ((string)(this["DBPW"]));
@@ -109,7 +109,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("BookManagement")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string DB {
             get {
                 return ((string)(this["DB"]));
@@ -121,7 +121,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ACddbff9f8b4006f284f7a35974ce37d38")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string TwiloSID {
             get {
                 return ((string)(this["TwiloSID"]));
@@ -133,7 +133,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("af6dd4f04492e85b66f62c41be8bdd90")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string TwiloToken {
             get {
                 return ((string)(this["TwiloToken"]));
@@ -145,7 +145,7 @@ namespace BookManagementProgram.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("+15128430247")]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string TwiloHost {
             get {
                 return ((string)(this["TwiloHost"]));

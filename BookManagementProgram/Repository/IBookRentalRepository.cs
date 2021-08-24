@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BookManagementProgram.Model;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -11,17 +12,11 @@ namespace BookManagementProgram.Repository
     {
         DataTable GetAllRental(); // 렌탈 리스트
         DataTable GetAllDelinquent(); // 연체자 리스트
-
-        //Dictionary<string, object> GetCategoryList();
-        //Dictionary<string, object> GetBookLocationList();
-        //Dictionary<string, object> GetBookRentalStateList();
-
-        //bool AddBook(Book book);
-
-        //Book GetBookByNumber(string bookNo);
-
-        //bool DeleteBookByNumber(string bookNo);
-
-        //bool UpdateBookInfo(Book book);
+        DataTable GetBookInfo(string bookNo); // 도서정보 검색
+        DataTable GetUserInfo(string userNo);// 사용자정보 검색
+        bool AddBook(Rental rental); // 렌탈정보등록
+        DataTable CheckRentalBook(string bookNo); // 반납 도서 확인
+        bool ReturnBook(string userNo, string bookNo);// 반납 정보 등록
+        DataTable GetRentalHistory(); // 전체 렌탈 기록 조회
     }
 }

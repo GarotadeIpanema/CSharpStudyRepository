@@ -18,6 +18,7 @@ namespace BookManagementProgram.RentalControls
         public ReturnBookForm()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
             rentalRepository = new BookRentalRepository();
         }
 
