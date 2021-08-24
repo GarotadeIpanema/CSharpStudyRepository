@@ -156,9 +156,42 @@
       <DependentUpon>MainPageForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\Rental.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RentalControls\AddRentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalControls\AddRentalForm.Designer.cs">
+      <DependentUpon>AddRentalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalControls\ReturnBookForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalControls\ReturnBookForm.Designer.cs">
+      <DependentUpon>ReturnBookForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalControls\SelectDelinquentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalControls\SelectDelinquentForm.Designer.cs">
+      <DependentUpon>SelectDelinquentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalControls\SelectRentalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalControls\SelectRentalForm.Designer.cs">
+      <DependentUpon>SelectRentalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalControls\SelectRentalHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RentalControls\SelectRentalHistory.Designer.cs">
+      <DependentUpon>SelectRentalHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Repository\BookRentalRepository.cs" />
+    <Compile Include="Repository\IBookRentalRepository.cs" />
     <Compile Include="Repository\BookRepository.cs" />
     <Compile Include="Repository\IBookRepository.cs" />
     <Compile Include="Repository\BookUserRepository.cs" />
@@ -218,6 +251,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RentalControls\AddRentalForm.resx">
+      <DependentUpon>AddRentalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalControls\ReturnBookForm.resx">
+      <DependentUpon>ReturnBookForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalControls\SelectDelinquentForm.resx">
+      <DependentUpon>SelectDelinquentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalControls\SelectRentalForm.resx">
+      <DependentUpon>SelectRentalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RentalControls\SelectRentalHistory.resx">
+      <DependentUpon>SelectRentalHistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UserAddForm.resx">
       <DependentUpon>UserAddForm.cs</DependentUpon>
     </EmbeddedResource>

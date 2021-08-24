@@ -19,8 +19,6 @@
         private string book_location_name; // 책 위치
         private int book_rental_no;  // 책 렌탈 상태
         private string book_rental_name;  // 책 렌탈 상태
-        private string rental_date;  // 렌탈 한 날
-        private string return_date;  // 반납 한 날
 
         public int bookNo { get { return book_no; } set { book_no = value; } }
         public string bookTitle { get { return book_title; } set { book_title = value; } }
@@ -39,8 +37,6 @@
         public string bookLocationName { get { return book_location_name; } set { book_location_name = value; } }
         public int bookRentalNo { get { return book_rental_no; } set { book_rental_no = value; } }
         public string bookRental_name { get { return book_rental_name; } set { book_rental_name = value; } }
-        public string rentalDate { get { return rental_date; } set { rental_date = value; } }
-        public string returnDate { get { return return_date; } set { return_date = value; } }
 
         // 전체 도서 리스트 조회 시 사용할 생성자
         public Book(int book_no, string book_title, string book_writer, string book_category_name, string book_description, int book_price, string book_company, string book_date, int book_pages, string book_originalImagePath, string book_savenameImaegPath, int book_rentalcounts, string book_location_name, string book_rental_name)

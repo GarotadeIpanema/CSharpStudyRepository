@@ -31,10 +31,6 @@ namespace BookManagementProgram.BookControls
             book_location_cmb.DataSource = new BindingSource(bookRepository.GetBookLocationList(), null);
             book_location_cmb.DisplayMember = "Key";
             book_location_cmb.ValueMember = "Value";
-            // 도서 상태 콤보 박스
-            book_state_cmb.DataSource = new BindingSource(bookRepository.GetBookRentalStateList(), null);
-            book_state_cmb.DisplayMember = "Key";
-            book_state_cmb.ValueMember = "Value";
         }
 
         // 취소 버튼
@@ -75,7 +71,7 @@ namespace BookManagementProgram.BookControls
             book.bookOriginalImagePath = book_image_txt.Text;
             book.bookSavenameImaegPath = SaveBookImageFIle();
             book.bookLocationNo = (int)book_location_cmb.SelectedValue;
-            book.bookRentalNo = (int)book_state_cmb.SelectedValue;
+            book.bookRentalNo = 1;
 
             return book;
         }

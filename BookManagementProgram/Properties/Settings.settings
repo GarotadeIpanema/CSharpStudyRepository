@@ -9,31 +9,31 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="GmailID" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">mmscoding0000@gmail.com</Value>
     </Setting>
     <Setting Name="GmailPW" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">PythonDjango0@</Value>
     </Setting>
     <Setting Name="DBIP" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">218.234.193.220,1433</Value>
     </Setting>
     <Setting Name="DBID" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">TBM</Value>
     </Setting>
     <Setting Name="DBPW" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">dong8844!@#$%^&amp;*()</Value>
     </Setting>
     <Setting Name="DB" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">BookManagement</Value>
     </Setting>
     <Setting Name="TwiloSID" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">ACddbff9f8b4006f284f7a35974ce37d38</Value>
     </Setting>
     <Setting Name="TwiloToken" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">af6dd4f04492e85b66f62c41be8bdd90</Value>
     </Setting>
     <Setting Name="TwiloHost" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">+15128430247</Value>
     </Setting>
   </Settings>
 </SettingsFile>

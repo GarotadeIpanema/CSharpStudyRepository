@@ -53,8 +53,6 @@ namespace BookManagementProgram.BookControls
             this.book_image_txt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.book_state_cmb = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.book_location_cmb = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.add_book_btn = new DevExpress.XtraEditors.SimpleButton();
@@ -244,7 +242,7 @@ namespace BookManagementProgram.BookControls
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Location = new System.Drawing.Point(461, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(369, 334);
+            this.groupBox2.Size = new System.Drawing.Size(369, 368);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "도서 이미지 입력";
@@ -253,7 +251,7 @@ namespace BookManagementProgram.BookControls
             // 
             this.pictureBox1.Location = new System.Drawing.Point(9, 59);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(350, 269);
+            this.pictureBox1.Size = new System.Drawing.Size(350, 303);
             this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
             // 
@@ -288,35 +286,14 @@ namespace BookManagementProgram.BookControls
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.book_state_cmb);
-            this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.book_location_cmb);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Location = new System.Drawing.Point(461, 355);
+            this.groupBox3.Location = new System.Drawing.Point(461, 386);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(369, 86);
+            this.groupBox3.Size = new System.Drawing.Size(369, 55);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "책 상태 입력";
-            // 
-            // book_state_cmb
-            // 
-            this.book_state_cmb.Font = new System.Drawing.Font("굴림", 10F);
-            this.book_state_cmb.FormattingEnabled = true;
-            this.book_state_cmb.Location = new System.Drawing.Point(66, 56);
-            this.book_state_cmb.Name = "book_state_cmb";
-            this.book_state_cmb.Size = new System.Drawing.Size(293, 21);
-            this.book_state_cmb.TabIndex = 21;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("굴림", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label11.Location = new System.Drawing.Point(6, 59);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(54, 13);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "책 상태";
             // 
             // book_location_cmb
             // 
@@ -411,8 +388,6 @@ namespace BookManagementProgram.BookControls
         private System.Windows.Forms.TextBox book_image_txt;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox book_state_cmb;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox book_location_cmb;
         private System.Windows.Forms.Label label10;
         private DevExpress.XtraEditors.SimpleButton cancel_btn;
