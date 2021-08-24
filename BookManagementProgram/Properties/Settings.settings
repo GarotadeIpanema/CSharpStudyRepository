@@ -9,31 +9,6 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="GmailID" Type="System.String" Scope="User">
-      <Value Profile="(Default)">@gmail.com</Value>
-    </Setting>
-    <Setting Name="GmailPW" Type="System.String" Scope="User">
-      <Value Profile="(Default)">@</Value>
-    </Setting>
-    <Setting Name="DBIP" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
-    </Setting>
-    <Setting Name="DBID" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
-    </Setting>
-    <Setting Name="DBPW" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
-    </Setting>
-    <Setting Name="DB" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
-    </Setting>
-    <Setting Name="TwiloSID" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
-    </Setting>
-    <Setting Name="TwiloToken" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
-    </Setting>
-    <Setting Name="TwiloHost" Type="System.String" Scope="User">
-      <Value Profile="(Default)"></Value>
     </Setting>
   </Settings>
 </SettingsFile>
