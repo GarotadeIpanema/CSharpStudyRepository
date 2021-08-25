@@ -20,8 +20,6 @@ namespace BookManagementProgram.MainControls
             bookRepository = new BookRepository();
 
             DataTable dt = bookRepository.GetRandomBook();
-            Console.WriteLine(dt != null);
-            Console.WriteLine(dt);
             if(dt != null)
             {
                 pictureBox1.Load(dt.Rows[0]["book_saveImagePath"].ToString());
