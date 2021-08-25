@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BookManagementProgram.Repository
 {
-    class BookRentalRepository : IBookRentalRepository
+    class BookRentalRepository
     {
         private SqlConnection conn = null;
         private SqlCommand cmd = null;

@@ -191,11 +191,8 @@
       <DependentUpon>SelectRentalHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="Repository\BookRentalRepository.cs" />
-    <Compile Include="Repository\IBookRentalRepository.cs" />
     <Compile Include="Repository\BookRepository.cs" />
-    <Compile Include="Repository\IBookRepository.cs" />
     <Compile Include="Repository\BookUserRepository.cs" />
-    <Compile Include="Repository\IBookUserRepository.cs" />
     <Compile Include="UserControls\UserAddForm.cs">
       <SubType>Form</SubType>
     </Compile>

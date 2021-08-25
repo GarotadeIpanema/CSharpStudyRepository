@@ -10,7 +10,7 @@ using System.Text;
 
 namespace BookManagementProgram.Repository
 {
-    class BookUserRepository : IBookUserRepository
+    class BookUserRepository
     {
         private SqlConnection conn = null;
         private SqlCommand cmd = null;

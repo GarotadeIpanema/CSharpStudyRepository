@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -178,7 +179,14 @@ namespace BookManagementProgram.BookControls
         // 이미지 파일 저장
         private string SaveBookImageFIle()
         {
-            string dir = @"C:\Users\jjh\Desktop\mms\BookManagerForm\BookImages";
+            //string dir = @"C:\Users\jjh\Desktop\mms\BookManagerForm\BookImages";
+            string dir = $@"{System.Environment.CurrentDirectory}\Images";
+            DirectoryInfo di = new DirectoryInfo(dir);
+            if(di.Exists == false)
+            {
+                di.Create();
+            }
+            
             Image image = Image.FromFile(book_image_txt.Text);
             bool bExist = true;
             int fileCount = 0;
