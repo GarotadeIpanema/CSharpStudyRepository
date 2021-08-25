@@ -4,24 +4,24 @@ using  BookManagementProgram.Repository;
 using System;
 using System.Windows.Forms;
 using DevExpress.XtraTabbedMdi;
-using System.Reflection;
 using BookManagementProgram.UserControls;
 using BookManagementProgram.BookControls;
 using BookManagementProgram.RentalControls;
+using DevExpress.XtraBars;
 
 namespace BookManagementProgram
 {
     public partial class Main : DevExpress.XtraEditors.XtraForm
     {
-        User user = BookUserRepository.user;
-        XtraTabbedMdiManager mdiManager;
+        private User user = BookUserRepository.user;
+        private XtraTabbedMdiManager mdiManager;
 
         public Main()
         {
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
 
-            switch(user.authorityNo)
+            switch (user.authorityNo)
             {
                 case 0:
                     user_page.Visible = true;
@@ -36,11 +36,42 @@ namespace BookManagementProgram
                     rental_page.Visible = true;
                     break;
             }
+
         }
-        // 유저 페이지 유저 조회 버튼
-        private void user_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+
+        // 홈, 사용자, 도서, 렌탈, 연체자,렌탈기록 조회버튼
+        private void MenuItemClickEvent(object sender, ItemClickEventArgs e)
         {
-            MenuRun("UserSelectForm", user_reset_btn.Hint);
+            MenuRun(e.Item.Hint, e.Item.Caption);
+        }
+
+        // 비밀번호 변경, 유저 등록, 유저 검색, 도서 추가, 도서 검색, 렌탈등록, 반납등록 버튼
+        private void ShowDialog_Event(object sender, ItemClickEventArgs e)
+        {
+            switch (e.Item.Hint)
+            {
+                case "FindByPassword":
+                    (new FindByPassword()).ShowDialog();
+                    break;
+                case "UserAddForm":
+                    (new UserAddForm()).ShowDialog();
+                    break;
+                case "UserSearchForm":
+                    (new UserSearchForm()).ShowDialog();
+                    break;
+                case "BookAddForm":
+                    (new BookAddForm()).ShowDialog();
+                    break;
+                case "BookSearchForm":
+                    (new BookSearchForm()).ShowDialog();
+                    break;
+                case "AddRentalForm":
+                    (new AddRentalForm()).ShowDialog();
+                    break;
+                case "ReturnBookForm":
+                    (new ReturnBookForm()).ShowDialog(); ;
+                    break;
+            }
         }
 
         // 폼 종료
@@ -54,80 +85,13 @@ namespace BookManagementProgram
         {
             Application.Exit();
         }
-
-        // 비밀번호 변경 버튼
-        private void home_changePassword_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new FindByPassword()).ShowDialog();
-        }
-
-        // 유저 페이지 유저 등록 버튼
-        private void user_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new UserAddForm()).ShowDialog();
-        }
-
-        // 유저 페이지 유저 검색 버튼
-        private void user_search_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new UserSearchForm()).ShowDialog();
-        }
-
-        // 도서 페이지 유저 조회 버튼
-        private void book_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MenuRun("BookSelectForm", book_reset_btn.Hint);
-        }
-
-        // 도서 추가 버튼
-        private void book_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new BookAddForm()).ShowDialog();
-        }
-
-        // 도서 조회 버튼
-        private void book_search_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new BookSearchForm()).ShowDialog();
-        }
-        // 렌탈 조회 버튼
-        private void rental_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MenuRun("SelectRentalForm", rental_reset_btn.Hint);
-        }
-
-        // 연체자 조회 버튼
-        private void overdue_reset_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MenuRun("SelectDelinquentForm", rental_return_btn.Hint);
-        }
-        // 렌탈 등록버튼
-        private void rental_add_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new AddRentalForm()).ShowDialog();
-        }
-        // 반납 확인 버튼
-        private void rental_return_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            (new ReturnBookForm()).ShowDialog();
-        }
-        // 렌탈 히스토리 폼
-        private void rental_log_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MenuRun("SelectRentalHistory", rental_log_btn.Hint);
-        }
-        // 홈버튼
-        private void home_btn_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            MenuRun("MainPageForm", home_btn.Hint);
-        }
-
+        
         // 메인 폼 로드
         private void Main_Load(object sender, EventArgs e)
         {
             ChildFormAdd();
 
-            MenuRun("MainPageForm", home_btn.Hint);
+            MenuRun(home_btn.Hint, home_btn.Caption);
         }
 
         // MID Child Form추가
@@ -147,33 +111,6 @@ namespace BookManagementProgram
         {
             XtraMdiTabPage page = e.Page;
         }
-
-        // 첫 로드할때 보여줄 메인 페이지
-        private void Home()
-        {
-
-            foreach (Form item in this.MdiChildren)
-            {
-                if (item.Name == "HOME")  //Notice
-                {
-                    item.Close();
-                }
-            }
-
-            Assembly asm = Assembly.GetExecutingAssembly();
-
-            Form frm = (Form)asm.CreateInstance(string.Format("{0}.{1}", "BookManagementProgram.MainControls", "MainPageForm"));
-
-            if (frm != null)
-            {
-                frm.Text = "메인화면";
-                frm.MdiParent = this;
-                frm.Dock = DockStyle.Fill;
-                frm.Show();
-
-            }
-        }
-
 
         // 메뉴 아이템에 따라 MID Child 생성
         private void MenuRun(string Menu, string FormTitle)

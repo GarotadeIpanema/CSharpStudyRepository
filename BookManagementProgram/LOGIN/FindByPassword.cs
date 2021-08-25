@@ -96,6 +96,7 @@ namespace BookManagementProgram.XtraForm
             return true;
         }
 
+        // 이메일 패턴 확인 정규표현식
         private bool CheckEmailPattern(string email)
         {
             string pattern = @"[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?";

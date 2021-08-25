@@ -20,15 +20,20 @@ namespace BookManagementProgram.MainControls
             bookRepository = new BookRepository();
 
             DataTable dt = bookRepository.GetRandomBook();
-
-            pictureBox1.Load(dt.Rows[0]["book_saveImagePath"].ToString());
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            book_no_txt.Text = dt.Rows[0]["book_no"].ToString();
-            book_title_txt.Text = dt.Rows[0]["book_title"].ToString();
-            book_writer_txt.Text = dt.Rows[0]["book_writer"].ToString();
-            book_category_txt.Text = dt.Rows[0]["category_name"].ToString();
-            book_description_txt.Text = dt.Rows[0]["book_description"].ToString();
-            book_rentalcount_txt.Text = dt.Rows[0]["book_rentalcounts"].ToString();
+            Console.WriteLine(dt != null);
+            Console.WriteLine(dt);
+            if(dt != null)
+            {
+                pictureBox1.Load(dt.Rows[0]["book_saveImagePath"].ToString());
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+                book_no_txt.Text = dt.Rows[0]["book_no"].ToString();
+                book_title_txt.Text = dt.Rows[0]["book_title"].ToString();
+                book_writer_txt.Text = dt.Rows[0]["book_writer"].ToString();
+                book_category_txt.Text = dt.Rows[0]["category_name"].ToString();
+                book_description_txt.Text = dt.Rows[0]["book_description"].ToString();
+                book_rentalcount_txt.Text = dt.Rows[0]["book_rentalcounts"].ToString();
+            }
+            
         }
     }
 }
